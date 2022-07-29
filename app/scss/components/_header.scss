@@ -4,7 +4,6 @@
 	left: 0;
 	width: 100%;
 	z-index: 2;
-	color: #fff;
 	&__body {
 		display: flex;
 		justify-content: space-between;
@@ -298,5 +297,107 @@
 	@media (max-width: 568px) {
 		// top: calc(61px + 16px);
 		top: 60px;
+	}
+}
+
+
+
+.header-light {
+	.header {
+			color: #fff;
+			&__lang {
+			&:hover {
+				color: rgb(200, 200, 200)
+			}
+		}
+		&__btn {
+			border: 1px solid rgba(253, 253, 253, 0.32);
+			&:hover {
+				color: rgb(200, 200, 200)
+			}
+			&:active {
+				background-color: rgba(255, 255, 255, 0.15);
+			}
+		}
+	}
+	.menu {
+		&__list {
+			a {
+				&:after{
+					background: rgb(200, 200, 200);
+				}
+				&:hover {
+					color: rgb(200, 200, 200);
+				}
+			}
+		}
+	}
+	.burger {
+		&:hover {
+			&:after {
+				color: $hoverColor1;
+			}
+			&:before,
+			span {
+				background-color: $hoverColor1;
+			}
+		}
+		span,
+		&:before {
+			background-color: #fff;
+		}
+		span {
+			background-color: #fff;
+		}
+	}
+}
+.header-dark {
+	.header{
+		color: $textColor1;
+		&__lang {
+			&:hover {
+				color: #686060;
+			}
+		}
+		&__btn {
+			border: 1px solid rgba(0, 0, 0, 0.32);
+			&:hover {
+				color: #686060
+			}
+			&:active {
+				background-color: rgba(0, 0, 0, 0.32);
+				color: $textColor1;
+			}
+		}
+	}
+	.menu {
+		&__list {
+			a {
+				&:after{
+					background-color: rgb(0, 0, 0);
+				}
+				&:hover {
+					color: #686060;
+				}
+			}
+		}
+	}
+	.burger {
+		span,
+		&:before {
+			background-color: $textColor1;
+		}
+		span {
+			background-color: $textColor1;
+		}
+		&:hover {
+			&:after {
+				color: #686060;
+			}
+			&:before,
+			span {
+				background-color: #686060;
+			}
+		}
 	}
 }
