@@ -3,7 +3,6 @@ const sass = require('gulp-sass')(require('sass'))
 var gcmq = require('gulp-group-css-media-queries');
 const rename = require('gulp-rename')
 const cleanCSS = require('gulp-clean-css')
-const babel = require('gulp-babel')
 const uglify = require('gulp-uglify')
 const autoprefixer = require('gulp-autoprefixer')
 const imagemin = require('gulp-imagemin')
@@ -17,6 +16,7 @@ const fileInclude = require('gulp-file-include');
 const replace = require('gulp-replace');
 const fonter = require('gulp-fonter');
 const ttf2woff2 = require('gulp-ttf2woff2');
+// const babel = require('gulp-babel')
 // const concat = require('gulp-concat')
 // const htmlmin = require('gulp-htmlmin')
 
@@ -26,15 +26,15 @@ const paths = {
 		app: 'app/**/*.html',
 		new: 'app/_*.html',
 		components: 'app/components/**/*.html',
-		dest: 'dist/'
+		dest: 'docs/'
 	},
 	scss: {
 		app: 'app/scss/**/*.scss',
-		dest: 'dist/css/'
+		dest: 'docs/css/'
 	},
 	js: {
 		app: 'app/js/**/*.js',
-		dest: 'dist/js/'
+		dest: 'docs/js/'
 	},
 	images: {
 		app: {
@@ -43,20 +43,20 @@ const paths = {
 			svg: 'app/img/**/*.svg',
 			video: `app/img/**/*.mp4`,
 		},
-		dest: 'dist/img/',
+		dest: 'docs/img/',
 	},
 	fonts: {
 		app: 'app/fonts/',
 		otf: 'app/fonts/*.otf',
 		ttf: 'app/fonts/*.ttf',
-		dest: 'dist/fonts',
+		dest: 'docs/fonts',
 	},
 
 }
 
-// Очистить dist за исключением ./img в нём
+// Очистить docs за исключением ./img в нём
 function clean() {
-	return del(['dist/*', '!dist/img', '!dist/fonts'])
+	return del(['docs/*', '!docs/img', '!docs/fonts'])
 }
 
 // Обработка html
@@ -163,7 +163,7 @@ function fonts() {
 function watcher() {
 	browsersync.init({
 		server: {
-			baseDir: "./dist"
+			baseDir: "./docs"
 		}
 	})
 	// gulp.watch(paths.html.dest).on('change', browsersync.reload)
