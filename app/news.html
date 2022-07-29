@@ -10,8 +10,14 @@
 		@@include('components/page-blocks/_header.html')
 		<main class="news">
 			<section class="hero">
-				<div class="hero__container">
-					<h1 class="hero__title title">Main Title on this page</h1>
+				<div class="hero__body">
+					<h2 class="hero__title2 title2">Our latest news</h2>
+					@@include('components/other-blocks/_submenu.html', {
+					'link1' : 'All',
+					'link2' : 'Blog',
+					'link3' : 'News',
+					'link4' : 'Advice from the designer',
+					})
 				</div>
 			</section>
 		</main>

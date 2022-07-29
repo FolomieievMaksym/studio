@@ -8,9 +8,13 @@
 //Подключение общих стилей
 @import "./components/header";
 @import "./components/footer";
+@import "./components/discover";
 
 // Подлкючение компонентов стилей
-@import "./components/_text";
+@import "./components/text";
+@import "./components/discover";
+@import "./components/btn";
+@import "./components/submenu";
 
 //Подключение стилей конкретной страницы
 @import "./pages/news";

@@ -1,0 +1,33 @@
+.submenu {
+	display: flex;
+	align-items: center;
+	li {
+		&:not(:last-child) {
+			margin-right: 32px;
+		}
+	}
+	&__link {
+		color: #828282;
+		transition:all 0.3s ease;
+		position: relative;
+		display: inline-block;
+		padding: 5px 0;
+		&:hover {
+			color: #080808;
+			&:after{
+				width: 100%;
+			}
+		}
+		&:after{
+			transition:all 0.3s ease;
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			width: 0;
+			height: 1px;
+			transform: translate(-50%, -50%);
+			background: rgba(58, 62, 75, 1);
+		}
+	}
+}

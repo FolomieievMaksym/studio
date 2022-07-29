@@ -1,0 +1,25 @@
+body.news {
+	background-color: #fff;
+	.header {
+		color: $textColor1;
+		.btn {
+			border-color: rgba(0, 0, 0, 0.32);
+		}
+	}
+}
+.hero {
+	padding-top: calc(208 / 1440 * 100%);
+	padding-bottom: calc(124 / 1440 * 100%); 
+	padding-left: calc(197 / 1440 * 100%); 
+	padding-right: calc(197 / 1440 * 100%); 
+		&__body {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__title2 {
+		}
+}
+.title2 {
+}
