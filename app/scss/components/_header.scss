@@ -239,7 +239,7 @@
 		color: #fff;
 		justify-content: flex-start;
 		a {
-			padding: 5px;
+			padding: 5px 0;
 		}
 		@media (max-width: 568px) {
 			gap: 1em;
@@ -356,13 +356,13 @@
 		color: $textColor1;
 		&__lang {
 			&:hover {
-				color: #686060;
+				color: $textColor2;
 			}
 		}
 		&__btn {
 			border: 1px solid rgba(0, 0, 0, 0.32);
 			&:hover {
-				color: #686060
+				color: $textColor2;
 			}
 			&:active {
 				background-color: rgba(0, 0, 0, 0.32);
@@ -375,9 +375,10 @@
 			a {
 				&:after{
 					background-color: rgb(0, 0, 0);
+					background-color: $textColor1;
 				}
 				&:hover {
-					color: #686060;
+					color: $textColor2;
 				}
 			}
 		}
@@ -392,12 +393,17 @@
 		}
 		&:hover {
 			&:after {
-				color: #686060;
+				color: $textColor2;
 			}
 			&:before,
 			span {
-				background-color: #686060;
+				background-color: $textColor2;
 			}
+		}
+	}
+	@media (max-width: 1024px) {
+		.menu__list {
+			color: $textColor1;;
 		}
 	}
 }

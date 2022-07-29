@@ -585,7 +585,7 @@ main {
 }
 
 .header-dark .header__lang:hover {
-  color: #686060;
+  color: #828282;
 }
 
 .header-dark .header__btn {
@@ -593,7 +593,7 @@ main {
 }
 
 .header-dark .header__btn:hover {
-  color: #686060;
+  color: #828282;
 }
 
 .header-dark .header__btn:active {
@@ -603,10 +603,11 @@ main {
 
 .header-dark .menu__list a:after {
   background-color: rgb(0, 0, 0);
+  background-color: #080808;
 }
 
 .header-dark .menu__list a:hover {
-  color: #686060;
+  color: #828282;
 }
 
 .header-dark .burger span,
@@ -619,12 +620,12 @@ main {
 }
 
 .header-dark .burger:hover:after {
-  color: #686060;
+  color: #828282;
 }
 
 .header-dark .burger:hover:before,
 .header-dark .burger:hover span {
-  background-color: #686060;
+  background-color: #828282;
 }
 
 .footer {
@@ -812,12 +813,16 @@ main {
   }
 
   .menu__list a {
-    padding: 5px;
+    padding: 5px 0;
   }
 
   .burger {
     margin-right: auto;
     display: block;
+  }
+
+  .header-dark .menu__list {
+    color: #080808;
   }
 
   .title1 {
