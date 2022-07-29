@@ -1,0 +1,32 @@
+.header {
+	@media (max-width: 1024px) {
+		padding-top: 6px;
+		.burger:after {
+			display: none;
+		}
+	}
+	@media (max-width: 768px) {
+		padding-top: 0;
+	}
+	&__logo {
+		@media (max-width: 768px) {
+			padding-left: 6px;
+		}
+		@media (max-width: 568px) {
+			padding-left: 0;
+		}
+	}
+	&__burger {
+		@media (max-width: 768px) {
+			transform: translate(-22px, -2px);
+			&:after {
+				display: none;
+			}
+		}
+	}
+	&__lang {
+		@media (max-width: 768px) {
+			transform: translate(-1px, -2px);
+		}
+	}
+}

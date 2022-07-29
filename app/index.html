@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html', {
+'lang':'en',
+'css': './css/home.min.css',
+'title': 'Home'
+})
+
+<body class="home">
+	<div class="wrapper">
+		@@include('components/page-blocks/_header.html')
+		<main class="home">
+			<section class="hero">
+				<div class="hero__body">
+					<div class="hero__content">
+						<h1 class="hero__title1 title1">Thoughtful making of space</h1>
+						<div class="hero__row">
+							<a href="#" class="hero__discover">Discover more</a>
+							<div class="hero__buttons">
+								<svg class="left-arrow" width="6" height="10" viewBox="0 0 6 10" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5 5L1 9" stroke="white" stroke-width="0.75" />
+								</svg>
+								<h6 class="hero__title6 title6">02</h6>
+								<span></span><span></span>
+								<h6 class="hero__title6 title6">04</h6>
+								<svg class="right-arrow" width="6" height="10" viewBox="0 0 6 10" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5 5L1 9" stroke="white" stroke-width="0.75" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="hero__bottom">
+						<ul class="hero__social">
+							<li><a href="#" class="hero__link link">Fb</a></li>
+							<li><a href="#" class="hero__link link">In</a></li>
+							<li><a href="#" class="hero__link link">Be</a></li>
+						</ul>
+						<div class="hero__address">
+							<p class="hero__option link">Berlin</p>
+							<address>
+								<a href="tel:+380983527547" class="hero__tel link">+380983527547</a>
+								<a href="mailto:info@gmail.com" class="hero__mail link">E: info@gmail.com</a>
+							</address>
+						</div>
+						<div class="hero__vertical">
+							<p class="hero__next link">Next Project</p>
+							<p class="hero__vertical-text">Perfect proportions</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper slider">
+					<div class="swiper-wrapper slider__wrapper">
+						<div class="swiper-slide slider__slide">
+							<div class="slider__image">
+							</div>
+						</div>
+						<div class="swiper-slide slider__slide">
+							<div class="slider__image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="philosophy">
+				<a href="about.html" class="philosophy__about">About</a>
+				<div class="philosophy__body">
+					<div class="philosophy__top top-philosophy">
+						<div class="top-philosophy__left">
+							<h2 class="top-philosophy__title2 title2">
+								Company Philosophy
+							</h2>
+							<p class="top-philosophy__text text">The basic philosophy of our studio is to create individual,
+								aesthetically stunning solutions for our customers by lightning-fast development of projects
+								employing unique styles and architecture. Even if you don't have a ready sketch of what you want
+								- we will help you get the result.</p>
+							<p class="top-philosophy__text text">We can also help you create harmony out of seemingly
+								completely
+								incompatible elements in the interior or the exterior design. Do you want to combine classics
+								and abstract art? Modern and retro? Love everything associated with the 1940's? No problem! </p>
+							@@include('components/other-blocks/_discover.html', {
+							'link': 'news.html',
+							'class': 'discover-dark'
+							})
+						</div>
+						<div class="top-philosophy__right">
+							<div class="top-philosophy__image">
+								<picture>
+									<source type="image/webp" srcset="@img/gallery/05.webp">
+									<img src='@img/gallery/05.jpg' alt=''>
+								</picture>
+							</div>
+						</div>
+					</div>
+					<div class="philosophy__bottom bottom-philosophy">
+						<div class="bottom-philosophy__left">
+							<div class="bottom-philosophy__image">
+								<picture>
+									<source type="image/webp" srcset="@img/gallery/03.webp">
+									<img src='@img/gallery/03.jpg' alt=''>
+								</picture>
+							</div>
+							<div class="bottom-philosophy__image">
+								<picture>
+									<source type="image/webp" srcset="@img/gallery/04.webp">
+									<img src='@img/gallery/04.jpg' alt=''>
+								</picture>
+							</div>
+						</div>
+						<div class="bottom-philosophy__right">
+							<span class="bottom-philosophy__decor">“</span>
+							<p class="bottom-philosophy__subtext subtext">
+								We can also help you create harmony out of seemingly completely incompatible elements in the
+								interior or the exterior design.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="projects">
+				@@include('components/other-blocks/_verticalDecor.html', {'link': 'projects.html', 'text': 'Projects'})
+				<h2 class="projects__we-have title1">We have</h2>
+				<div class="projects__container">
+					<h2 class="projects__title2 title2">Our Projects</h2>
+					<p class="projects__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+						ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare
+						pretium velit.</p>
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="gallery__body">
+					<div class="gallery__items">
+						<!-- ! 1 -->
+						<div class="gallery__item item-gallery">
+							<div class="item-gallery__body">
+								<div class="item-gallery__top">
+									<p class="item-gallery__lodz title7">Lodz</p>
+									<p class="item-gallery__date title7">16.10.2018</p>
+									<p class="item-gallery__sqm title7">80 sq.m</p>
+								</div>
+								<div class="item-gallery__bottom">
+									<h3 class="item-gallery__title3 title3">Eyewear store interior</h3>
+									@@include('components/other-blocks/_discover.html', {
+									'link': 'projects.html',
+									'class': 'discover-light'
+									})
+								</div>
+							</div>
+							<div class="item-gallery__image">
+								<picture>
+									<source type="image/webp" srcset="@img/gallery/01.webp">
+									<img src='@img/gallery/01.jpg' alt=''>
+								</picture>
+							</div>
+						</div>
+						<!-- ! 2 -->
+						<div class="gallery__item item-gallery">
+							<div class="item-gallery__body">
+								<div class="item-gallery__top">
+									<p class="item-gallery__lodz title7">Lodz</p>
+									<p class="item-gallery__date title7">16.10.2018</p>
+									<p class="item-gallery__sqm title7">80 sq.m</p>
+								</div>
+								<div class="item-gallery__bottom">
+									<h3 class="item-gallery__title3 title3 title-to-change">Residence by the lighthouse</h3>
+									@@include('components/other-blocks/_discover.html', {
+									'link': 'projects.html',
+									'class': 'discover-light'
+									})
+								</div>
+							</div>
+							<div class="item-gallery__image">
+								<picture>
+									<source type="image/webp" srcset="@img/gallery/04.webp" media="(min-width: 569px)">
+									<source type="image/webp" srcset="@img/gallery/06.webp" media="(min-width: 0px)">
+									<img src='@img/gallery/04.jpg' alt=''>
+								</picture>
+							</div>
+						</div>
+						<!-- ! 3 -->
+						<div class="gallery__item item-gallery">
+							<div class="item-gallery__body">
+								<div class="item-gallery__top">
+									<p class="item-gallery__lodz title7">Lodz</p>
+									<p class="item-gallery__date title7">16.10.2018</p>
+									<p class="item-gallery__sqm title7">80 sq.m</p>
+								</div>
+								<div class="item-gallery__bottom">
+									<h3 class="item-gallery__title3 title3">Residence by the lighthouse</h3>
+									@@include('components/other-blocks/_discover.html', {
+									'link': 'projects.html',
+									'class': 'discover-light'
+									})
+								</div>
+							</div>
+							<div class="item-gallery__image">
+								<picture>
+									<source type="image/webp" srcset="@img/gallery/06.webp" media="(min-width: 769px)">
+									<source type="image/webp" srcset="@img/gallery/07.webp" media="(min-width: 569px)">
+									<source type="image/webp" srcset="@img/gallery/04.webp" media="(min-width: 0px)">
+									<img src='@img/gallery/06.jpg' alt=''>
+								</picture>
+							</div>
+						</div>
+						<!-- ! 4 -->
+						<div class="gallery__item item-gallery">
+							<div class="item-gallery__body">
+								<div class="item-gallery__top">
+									<p class="item-gallery__lodz title7">Lodz</p>
+									<p class="item-gallery__date title7">16.10.2018</p>
+									<p class="item-gallery__sqm title7">80 sq.m</p>
+								</div>
+								<div class="item-gallery__bottom">
+									<h3 class="item-gallery__title3 title3">Eyewear store interior</h3>
+									@@include('components/other-blocks/_discover.html', {
+									'link': 'projects.html',
+									'class': 'discover-light'
+									})
+								</div>
+							</div>
+							<div class="item-gallery__image">
+								<picture>
+									<source type="image/webp" srcset="@img/gallery/07.webp" media="(min-width: 769px)">
+									<source type="image/webp" srcset="@img/gallery/11.webp" media="(min-width: 569px)">
+									<source type="image/webp" srcset="@img/gallery/07.webp" media="(min-width: 0px)">
+									<img src='@img/gallery/07.jpg' alt=''>
+								</picture>
+							</div>
+						</div>
+						<!-- ! 5 -->
+						<div class="gallery__item item-gallery">
+							<div class="item-gallery__body">
+								<div class="item-gallery__top">
+									<p class="item-gallery__lodz title7">Lodz</p>
+									<p class="item-gallery__date title7">16.10.2018</p>
+									<p class="item-gallery__sqm title7">80 sq.m</p>
+								</div>
+								<div class="item-gallery__bottom">
+									<h3 class="item-gallery__title3 title3">House on a Hillside</h3>
+									@@include('components/other-blocks/_discover.html', {
+									'link': 'projects.html',
+									'class': 'discover-light'
+									})
+								</div>
+							</div>
+							<div class="item-gallery__image">
+								<picture>
+									<source type="image/webp" srcset="@img/gallery/11.webp">
+									<img src='@img/gallery/07.jpg' alt=''>
+								</picture>
+							</div>
+						</div>
+						<!-- ! 6 -->
+						<div class="gallery__item item-gallery">
+							<a href="projects.html" class="item-gallery__link">
+								<div class="item-gallery__title title3">See more 60 projects</div>
+								<div class="item-gallery__img">
+									<picture>
+										<source type='image/webp' srcset='@img/gallery/07.webp'>
+										<img src='@img/gallery/07.jpg' alt=''>
+									</picture>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('components/page-blocks/_imagesRow.html')
+			@@include('components/page-blocks/_imagesAbsolute.html')
+			@@include('components/page-blocks/_contacts.html')
+		</main>
+		@@include('components/page-blocks/_footer.html')
+	</div>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

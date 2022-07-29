@@ -1,0 +1,22 @@
+
+@import "./default/variables";
+@import "./default/null";
+@import "./default/mixins";
+@import "./default/fonts";
+@import "./default/global";
+
+//Подключение общих стилей
+@import "./components/header";
+@import "./components/footer";
+
+// Подлкючение компонентов стилей
+@import "./components/_text";
+@import "./components/btn";
+@import "./components/discover";
+@import "./components/vericalDecor";
+@import "./components/imagesRow";
+@import "./components/imagesAbsolute";
+@import "./components/contacts";
+
+//Подключение стилей конкретной страницы
+@import "./pages/home";

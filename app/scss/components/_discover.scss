@@ -1,0 +1,56 @@
+.discover-dark,
+.discover-light {
+	font-family: $ff1;
+	font-weight: 700;
+	@include fl(10, 12.19);
+	letter-spacing: calc(10*.12px);
+	position: relative;
+	display: inline-block;
+	padding-left: 16px;
+	text-transform: uppercase;
+	@media (max-width: 768px) {
+		padding-left: 26px;
+	}
+	@media (max-width: 568px) {
+		padding-left: 17px;
+	}
+	&:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 8px;
+		height: 1px;
+		transform: translate(0, -50%);
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: calc(100% + 9px);
+		width: 56px;
+		height: 1px;
+		transform: translate(0, -50%);
+	}
+	transition:all 0.3s ease;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+
+.discover-dark {
+	color: $textColor1;
+	&:after,
+	&:before {
+		background: rgba(49, 49, 49, 0.2);
+	}
+}
+
+.discover-light {
+	color: #fff;
+	&:after,
+	&:before {
+		background: rgba(255, 255, 255, 0.2);
+	}
+}

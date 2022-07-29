@@ -1,0 +1,116 @@
+.title1 {
+	font-family: $ff1;
+	@include fl(56, 68.26);
+	font-weight: 700;
+	@media (max-width: 1024px) {
+		@include fl(48, 58.51);
+	}
+	@media (max-width: 768px) {
+		@include fl(44, 53.64);
+		
+	}
+	@media (max-width: 568px) {
+		@include fl(40, 39.01);
+		
+	}
+}
+.title2 {
+	font-family: $ff1;
+	@include fl(36, 43.88);
+	font-weight: 700;
+	@media (max-width: 1024px) {
+		@include fl(32, 39.01);
+		
+	}
+	@media (max-width: 568px) {
+		@include fl(26, 31.69);
+		
+	}
+}
+.title3 {
+	font-family: $ff1;
+	@include fl(22, 27.89);
+	font-weight: 700;
+	@media (max-width: 1024px) {
+		@include fl(20, 25.2);
+	}
+	@media (max-width: 768px) {
+		@include fl(20, 25.36);
+	}
+}
+.title4 {
+	font-family: $ff1;
+	@include fl(16, 21.84);
+	font-weight: 700;
+}
+.title6 {
+	font-family: $ff1;
+	@include fl(11, 13.41);
+	font-weight: 300;
+	letter-spacing: calc(11*.06px);
+}
+.title7 {
+	font-family: $ff1;
+	@include fl(10, 17.07);
+	font-weight: 400;
+	@media (max-width: 1024px) {
+		@include fl(11, 18.7);
+	}
+}
+.subtitle3 {
+	font-family: $ff1;
+	@include fl(28, 34.13);
+	font-weight: 700;
+}
+.subtitle4 {
+	font-family: $ff1;
+	@include fl(14, 19.2);
+	font-weight: 700;
+	color: #3A3E4B;
+}
+.label2 {
+	font-family: $ff1;
+	@include fl(36, 51.26);
+	font-weight: 700;
+	@media (max-width: 1024px) {
+		@include fl(32, 45.57);
+	}
+	@media (max-width: 568px) {
+		@include fl(26, 31.5);
+	}
+}
+.sublabel3 {
+	font-family: $ff1;
+	@include fl(28, 35.53);
+	font-weight: 700;
+}
+.link {
+	font-family: $ff1;
+	@include fl(11, 13.41);
+	font-weight: 600;
+	letter-spacing: calc(11*.06px);
+	color: inherit;
+}
+.text {
+	font-family: $ff1;
+	@include fl(14, 23.89);
+	font-weight: 300;
+	opacity: .7;
+	color: $textColor1;
+}
+.text500 {
+	font-family: $ff1;
+	@include fl(14, 23.89);
+	font-weight: 500;
+	color: $textColor1;
+}
+.subtext {
+	font-family: $ff1;
+	@include fl(20, 34.13);
+	font-weight: 300;
+	opacity: .7;
+	@media (max-width: 1024px) {
+		@include fl(16, 27.31);
+		
+	}
+}

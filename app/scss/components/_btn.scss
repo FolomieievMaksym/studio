@@ -1,0 +1,26 @@
+// .btn {
+button {
+	// display: inline-flex;
+	// justify-content: center;
+	// align-items: center;
+	font-family: $ff1;
+	border: none;
+	background-color: #FFFFFF;
+	color: $textColor1;
+	@include fl(11, 13.41);
+	font-weight: 600;
+	letter-spacing: calc(11*.06px);
+	height: 48px;
+	width: 183px;
+	cursor: pointer;
+	transition:all 0.3s ease;
+	@media (max-width: 1024px) {
+		height: 42px;
+	}
+	&:hover {
+		@include fz(12)
+	}
+	&:active {
+		background-color: rgb(238, 238, 238);
+	}
+}
