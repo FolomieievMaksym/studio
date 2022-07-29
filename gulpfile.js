@@ -183,5 +183,5 @@ exports.img = img
 exports.fonts = fonts
 exports.watcher = watcher
 
-exports.default = gulp.series(clean, html, fonts, gulp.parallel(scss, js, img), watcher) //Production
-// exports.default = gulp.series(clean, html, gulp.parallel(scss, js, img), watcher) //Что бы не ждать конвертацию шрифтов
+// exports.default = gulp.series(clean, html, fonts, gulp.parallel(scss, js, img), watcher) //Production
+exports.default = gulp.series(clean, html, gulp.parallel(scss, js, img), watcher) //Что бы не ждать конвертацию шрифтов
