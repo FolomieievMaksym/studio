@@ -2511,7 +2511,6 @@ button:active {
 
 @media (max-width: 1024px) and (max-width: 568px) {
   .menu {
-    left: 100%;
     top: 60px;
   }
 

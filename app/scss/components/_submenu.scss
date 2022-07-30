@@ -4,6 +4,12 @@
 	li {
 		&:not(:last-child) {
 			margin-right: 32px;
+			@media (max-width: 1024px) {
+				margin-right: 26px;
+			}
+			@media (max-width: 768px) {
+				margin-right: 28px;
+			}
 		}
 	}
 	&__link {
