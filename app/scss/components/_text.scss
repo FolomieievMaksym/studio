@@ -61,6 +61,13 @@
 	font-family: $ff1;
 	@include fl(28, 34.13);
 	font-weight: 700;
+	@media (max-width: 1024px) {
+		@include fl(20, 24.38);
+	}
+	@media (max-width: 768px) {
+		@include fl(16, 20.28);
+		
+	}
 }
 .subtitle4 {
 	font-family: $ff1;
@@ -83,6 +90,13 @@
 	font-family: $ff1;
 	@include fl(28, 35.53);
 	font-weight: 700;
+	@media (max-width: 1024px) {
+		@include fl(20, 25.38);
+	}
+	@media (max-width: 768px) {
+		@include fl(16, 20.3);
+		
+	}
 }
 .link {
 	font-family: $ff1;
