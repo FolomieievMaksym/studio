@@ -179,6 +179,21 @@ window.addEventListener('load', () => {
 
 			}
 		}
+
+		// Меняем текст в bg__text(news.html)
+		if (document.querySelector('.bg__text')) {
+			const bgText = document.querySelector('.bg__text')
+			window.addEventListener('resize', changeText)
+			changeText()
+
+			function changeText() {
+				if (window.innerWidth > 1024) {
+					bgText.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.'
+				} else if (window.innerWidth <= 1024) {
+					bgText.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.'
+				}
+			}
+		}
 	}
 
 	//=============================================================================
