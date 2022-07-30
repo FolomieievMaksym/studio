@@ -197,7 +197,7 @@ window.addEventListener('load', () => {
 	}
 
 	//=============================================================================
-	// singleNews.html
+	// projects.html
 	//=============================================================================
 	if (document.querySelector('body.projects')) {
 		// Выпадашка Option
@@ -256,6 +256,33 @@ window.addEventListener('load', () => {
 					titlesToChange[4].innerHTML = 'House on a Hillside'
 				}
 			}
+		}
+	}
+
+	//=============================================================================
+	// about.html
+	//=============================================================================
+	if (document.querySelector('body.about')) {
+
+		// Слайдер
+		if (document.querySelector('.swiper')) {
+			const swiper = new Swiper('.swiper', {
+				speed: 500,
+				simulateTouch: true,
+				slideToClickedSlide: true,
+				slidesPerView: 1.2,
+				spaceBetween: 15,
+			});
+			const btns = [document.querySelector('.left-arrow'), document.querySelector('.right-arrow')]
+			btns.forEach(el => {
+				el.addEventListener('click', () => {
+					if (el.classList.contains('left-arrow')) {
+						swiper.slidePrev(500, false);
+					} else {
+						swiper.slideNext(500, false);
+					}
+				})
+			})
 		}
 	}
 })

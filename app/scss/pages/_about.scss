@@ -71,7 +71,153 @@ body.about {
 //======================================================================================
 // Philosophy
 //======================================================================================
+.philosophy {
 
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: calc(132 / (1440 - 263) * 100%);
+		padding-left: calc(263 / 1440 * 100%);
+		padding-top: calc(140 / 1440 * 100%);
+		padding-bottom: calc(140 / 1440 * 100%);
+		@media (max-width: 1024px) {
+			padding-left: calc(80 / 1024 * 100%);
+		}
+		@media (max-width: 768px) {
+			flex-direction: column;
+			padding-left: 0;
+		}
+	}
+
+	&__left {
+		flex: 0 0 calc(383 / (1440 - 263) * 100%);
+		// flex: 0 0 383px;
+		// padding-top: 38px;
+		@media (max-width: 768px) {
+			padding-left: calc(30 / 1024 * 100%);
+			padding-right: calc(30 / 1024 * 100%);
+			max-width: 500px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__title2 {
+		margin-bottom: 14px;
+	}
+
+	&__text {
+		margin-bottom: 22px;
+		opacity: 1;
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+		pointer-events: all;
+		transform: translate(-10px, 10px);
+		@media (max-width: 768px) {
+			margin-bottom: 50px;
+		}
+		path {
+			stroke: $textColor1;
+		}
+		svg {
+			padding: 10px;
+			cursor: pointer;
+			transition:all 0.3s ease;
+			&:hover {
+				transform: scale(2);
+			}
+		}
+		svg:first-child {
+			transform: rotate(180deg);
+			&:hover {
+			transform: scale(2) rotate(180deg);
+			}
+		}
+		svg:last-child {
+			margin-left: 4px;
+		}
+		span {
+			height: 1px;
+			background-color: #828282;
+		}
+		span:first-of-type {
+			width: 88.5px;
+			margin-left: 12px;
+			@media (max-width: 1024px) {
+				width: 71.54px;
+			}
+			@media (max-width: 568px) {
+				width: 37.22px;
+			}
+		}
+		span:last-of-type {
+			width: 138.5px;
+			margin-right: 12px;
+			opacity: .32;
+			@media (max-width: 1024px) {
+				width: 76.46px;
+			}
+			@media (max-width: 568px) {
+				width: 50.78px;
+			}
+		}
+	}
+	&__title6 {
+		line-height: 1;
+	}
+
+	&__slider {
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+}
+// Slider
+.slider {
+	&__slide {
+		&:nth-child(2) {
+			.slider__image {
+				img {
+					// object-fit: fill; // Появится большой отступ между слайдами из-за сдвига влево. можно сделать бекграундом до пиксель пёрфекта, но лень.
+					object-position:-10px 50%;
+					@media (max-width: 1400px) {
+						object-position: center;
+					}
+				}
+			}
+		}
+	}
+
+	&__image {
+		position:relative;
+		// width: 552px;
+		width: calc(100% + 3px);
+		height: 444px;
+		@media (max-width: 1024px) {
+			height: 400px;
+		}
+		@media (max-width: 768px) {
+			height: 350px;
+		}
+		@media (max-width: 568px) {
+			height: 300px;
+		}
+		img {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position:center;
+		}
+	}
+}
 //======================================================================================
 // About
 //======================================================================================
