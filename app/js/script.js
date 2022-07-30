@@ -226,6 +226,36 @@ window.addEventListener('load', () => {
 			}
 		}
 
-		// Что-то
+		//Меняем текст в тайтле айтема... (.gallery)
+		if (document.querySelector('.item-gallery__title3')) {
+			const titlesToChange = document.querySelectorAll('.item-gallery__title3');
+			window.addEventListener('resize', changeTitle)
+			changeTitle()
+
+			function changeTitle() {
+				if (window.innerWidth > 1024) {
+					titlesToChange[1].innerHTML = 'Residence by the lighthouse'
+				} else if (window.innerWidth <= 1024 && window.innerWidth > 768) {
+					titlesToChange[0].innerHTML = 'Eyewear store interior'
+					titlesToChange[1].innerHTML = 'Minimalist style home'
+					titlesToChange[2].innerHTML = 'Residence by the lighthouse'
+					titlesToChange[3].innerHTML = 'Eyewear store interior'
+					titlesToChange[4].innerHTML = 'Eyewear store interior'
+					titlesToChange[5].innerHTML = 'Residence by the lighthouse'
+				} else if (window.innerWidth <= 768 && window.innerWidth > 568) {
+					titlesToChange[0].innerHTML = 'Residence by the lighthouse'
+					titlesToChange[1].innerHTML = 'Minimalist style home'
+					titlesToChange[2].innerHTML = 'Minimalist style home'
+					titlesToChange[3].innerHTML = 'Minimalist style home'
+					titlesToChange[4].innerHTML = 'Eyewear store interior'
+				} else if (window.innerWidth <= 568) {
+					titlesToChange[0].innerHTML = 'Residence by the lighthouse'
+					titlesToChange[1].innerHTML = 'Eyewear store interior'
+					titlesToChange[2].innerHTML = 'Minimalist style home'
+					titlesToChange[3].innerHTML = 'Eyewear store interior'
+					titlesToChange[4].innerHTML = 'House on a Hillside'
+				}
+			}
+		}
 	}
 })

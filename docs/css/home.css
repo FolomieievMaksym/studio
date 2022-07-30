@@ -2493,6 +2493,10 @@ button:active {
     transform: translate(0, -2px);
   }
 
+  .item-gallery__top p:not(:last-child) {
+    margin-right: 20px;
+  }
+
   .item-gallery__top {
     display: flex;
   }
@@ -2900,6 +2904,10 @@ button:active {
 
   .item-gallery:after {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15.93%, rgba(0, 0, 0, 0.63) 100%) 0 0/cover no-repeat;
+  }
+
+  .item-gallery__top p:not(:last-child) {
+    margin-right: 18px;
   }
 
   .item-gallery__bottom .discover-light {
