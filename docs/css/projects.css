@@ -1165,6 +1165,7 @@ body.projects {
 }
 
 .item-gallery {
+  display: none;
   position: relative;
   overflow: hidden;
   position: relative;
