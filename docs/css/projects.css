@@ -850,6 +850,7 @@ main {
 }
 
 .submenu__link:hover {
+  opacity: 1;
   color: #080808;
 }
 
@@ -866,7 +867,8 @@ main {
   width: 0;
   height: 1px;
   transform: translate(-50%, -50%);
-  background: rgb(58, 62, 75);
+  opacity: 1;
+  background-color: #080808;
 }
 
 .images-row {
@@ -1148,6 +1150,122 @@ body.projects {
   pointer-events: all;
 }
 
+.gallery {
+  margin-top: -5px;
+  padding-left: 4.3055555556%;
+  padding-right: 4.4444444444%;
+}
+
+.gallery__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+  gap: 8px;
+}
+
+.item-gallery {
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.item-gallery:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 0);
+  background: linear-gradient(10deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0) 45.39%) 0 0/cover no-repeat;
+  z-index: 1;
+}
+
+.item-gallery:first-child:after {
+  background: none;
+}
+
+.item-gallery:nth-child(2):after {
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.item-gallery:nth-child(2) .item-gallery__top {
+  display: flex;
+}
+
+.item-gallery:nth-child(2) .item-gallery__bottom {
+  display: flex;
+}
+
+.item-gallery__body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  padding: 30px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-gallery__top {
+  display: flex;
+}
+
+.item-gallery__top p:not(:last-child) {
+  margin-right: 24px;
+}
+
+.item-gallery__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-gallery__image {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.item-gallery__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+@media (min-width: 769px) {
+  .item-gallery:nth-child(3n) {
+    grid-column: span 2;
+  }
+
+  .item-gallery:nth-child(3n) .item-gallery__image {
+    padding-bottom: 49.696%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .item-gallery__top {
+    display: none;
+  }
+
+  .item-gallery__bottom {
+    display: none;
+  }
+
+  .item-gallery .discover-light {
+    display: none;
+  }
+}
+
 @media (max-width: 1330px) {
   .images-row__label2 {
     font-size: 1.875em;
@@ -1325,6 +1443,38 @@ body.projects {
   .hero .submenu li:not(:last-child) {
     margin-right: 34px;
   }
+
+  .gallery {
+    padding-left: 5.46875%;
+    padding-right: 5.46875%;
+    margin-top: -6px;
+  }
+
+  .gallery__items {
+    gap: 6px;
+  }
+
+  .item-gallery:nth-child(3n) .item-gallery__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .item-gallery:nth-child(2):after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15.93%, rgba(0, 0, 0, 0.63) 100%) 0 0/cover no-repeat;
+  }
+
+  .item-gallery:nth-child(4):after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15.93%, rgba(0, 0, 0, 0.63) 100%) 0 0/cover no-repeat;
+  }
+
+  .item-gallery:last-child {
+    margin-top: -1px;
+  }
+
+  .item-gallery__title3 {
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 1024px) and (max-width: 568px) {
@@ -1434,6 +1584,24 @@ body.projects {
     padding-bottom: 12.7604166667%;
     padding-left: 16.1458333333%;
     padding-right: 16.1458333333%;
+  }
+
+  .gallery {
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    margin-top: -4px;
+  }
+
+  .gallery__items {
+    grid-template-columns: 1fr;
+  }
+
+  .item-gallery:first-child:after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15.93%, rgba(0, 0, 0, 0.63) 100%) 0 0/cover no-repeat;
+  }
+
+  .item-gallery:nth-child(5):after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15.93%, rgba(0, 0, 0, 0.63) 100%) 0 0/cover no-repeat;
   }
 }
 
@@ -1568,6 +1736,16 @@ body.projects {
   .option-hero {
     display: block;
     max-width: 128px;
+  }
+
+  .gallery {
+    padding-left: 6.4%;
+    padding-right: 6.4%;
+    margin-top: 0px;
+  }
+
+  .item-gallery:nth-child(3):after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15.93%, rgba(0, 0, 0, 0.63) 100%) 0 0/cover no-repeat;
   }
 }
 

@@ -932,6 +932,7 @@ button:active {
 }
 
 .submenu__link:hover {
+  opacity: 1;
   color: #080808;
 }
 
@@ -948,7 +949,8 @@ button:active {
   width: 0;
   height: 1px;
   transform: translate(-50%, -50%);
-  background: rgb(58, 62, 75);
+  opacity: 1;
+  background-color: #080808;
 }
 
 body.news {
