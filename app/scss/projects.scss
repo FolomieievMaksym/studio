@@ -11,6 +11,10 @@
 
 // Подлкючение компонентов стилей
 @import "./components/text";
+@import "./components/discover";
+@import "./components/submenu";
+@import "./components/imagesRow";
+@import "./components/btn";
 
 //Подключение стилей конкретной страницы
 @import "./pages/projects";

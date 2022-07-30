@@ -199,4 +199,33 @@ window.addEventListener('load', () => {
 	//=============================================================================
 	// singleNews.html
 	//=============================================================================
+	if (document.querySelector('body.projects')) {
+		// Выпадашка Option
+		if (document.querySelector('.hero__option')) {
+			const heroOption = document.querySelector('.option-hero'),
+				optionTitle = document.querySelector('.option-hero__title'),
+				optionList = document.querySelector('.option-hero__list');
+
+			body.addEventListener('click', showOptions)
+			// В идеале - доработать... Первая ссылка кликается слишком "высоко"
+			function showOptions(e) {
+				if (!e.target.closest('.hero__option')) {
+					heroOption.classList.remove('active')
+					heroOption.style.height = null
+					optionList.style.height = null
+				} else if (e.target.closest('.option-hero').classList.contains('active')) {
+					heroOption.classList.remove('active')
+					heroOption.style.height = null
+					optionList.style.height = null
+				} else if (!e.target.closest('.option-hero').classList.contains('active')) {
+					heroOption.classList.add('active')
+					heroOption.style.height = heroOption.scrollHeight + optionList.scrollHeight + optionTitle.scrollHeight + 'px'
+					optionList.style.height = optionList.scrollHeight + 'px'
+				}
+
+			}
+		}
+
+		// Что-то
+	}
 })
