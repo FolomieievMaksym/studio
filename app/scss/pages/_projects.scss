@@ -552,5 +552,54 @@ body.projects {
 	}
 }
 //======================================================================================
-// next
+// Images-row
 //======================================================================================
+body.projects {
+	.footer {
+		svg {
+			path {
+				fill: $textColor1;
+			}
+		}
+	}
+	.vertical-decor {
+		display: none;
+	}
+	.btn {
+		border: 1px solid rgba(0, 0, 0, 0.32);
+		background-color: #FAFAFA;
+		&:active {
+			background-color: rgba(8, 8, 8, .32);
+		}
+	}
+	.images-row {
+		margin-bottom: 50px;
+		@media (max-width: 1024px) {
+			margin-bottom: 10px;
+			&__content {
+				padding: 11.867188% 0;;
+			}
+		}
+		@media (max-width: 768px) {
+			&__content {
+				padding: 13.56% 0;;
+			}
+			&__label2 {
+				max-width: 400px;
+			}
+		}
+		@media (max-width: 568px) {
+			margin-bottom: 70px;
+			&__content {
+				padding: 25.56% 6%;
+			}
+			&__label2 {
+				max-width: 298px;
+				margin-bottom: 18px;
+			}
+			&__text  {
+				margin-bottom: 37px;
+			}
+		}
+	}
+}

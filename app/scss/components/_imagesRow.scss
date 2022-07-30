@@ -18,7 +18,7 @@
 	@media (max-width: 340px) {
 		padding-bottom: calc(486 / 340  * 100%);
 	}
-	&__items {
+	&__items { 
 		// display: flex;
 		position: absolute;
 		left: 0;
@@ -166,7 +166,7 @@
 	}
 	
 	&__label2 {
-		color: #fff;
+		// color: #fff;
 		align-self: flex-start;
 		max-width: 424px;
 		@media (max-width: 1330px) {
@@ -203,7 +203,7 @@
 
 	&__text {
 		max-width: 340px;
-		color: #fff;
+		// color: #fff;
 		margin-bottom: 41px;
 		transform: translate(0, -1px);
 		@media (max-width: 1024px) {
@@ -228,4 +228,23 @@
 	.btn {
 		pointer-events: all;
 	}
+}
+.images-dark {
+	background-color: $textColor1;
+ .images-row {
+	&__label2,
+	&__text {
+		color: #fff;
+	}
+ }
+}
+.images-light {
+	background-color: #FAFAFA;
+	.images-row {
+		&__label2,
+		&__text {
+			color: $textColor1;
+			opacity: 1;
+		}
+	 }
 }
