@@ -520,6 +520,9 @@ body.about{
 		&__title1 {
 			transform: translate(-18px, 0);
 			color: #fff;
+			@media (max-width: 1024px) {
+				transform: translate(0, 0);
+			}
 		}
 		&__text {
 			color: #fff;

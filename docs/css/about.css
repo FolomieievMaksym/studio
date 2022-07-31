@@ -1606,6 +1606,10 @@ body.about .footer path {
     column-gap: 50px;
   }
 
+  body.about .images-absolute__title1 {
+    transform: translate(0, 0);
+  }
+
   .team__label2 {
     margin-bottom: 50px;
     max-width: 394px;
