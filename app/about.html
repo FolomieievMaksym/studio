@@ -47,7 +47,7 @@
 								<div class="slider__image">
 									<picture>
 										<source type='image/webp' srcset='@img/gallery/12.webp'>
-										<img src='@img/gallery/12.jpg' alt=''>
+										<img src='@img/gallery/12.jpg' alt='Interier photo'>
 									</picture>
 								</div>
 							</div>
@@ -55,7 +55,7 @@
 								<div class="slider__image">
 									<picture>
 										<source type='image/webp' srcset='@img/gallery/01.webp'>
-										<img src='@img/gallery/01.jpg' alt=''>
+										<img src='@img/gallery/01.jpg' alt='Interier photo'>
 									</picture>
 								</div>
 							</div>
@@ -63,7 +63,7 @@
 								<div class="slider__image">
 									<picture>
 										<source type='image/webp' srcset='@img/gallery/02.webp'>
-										<img src='@img/gallery/02.jpg' alt=''>
+										<img src='@img/gallery/02.jpg' alt='Interier photo'>
 									</picture>
 								</div>
 							</div>
@@ -71,7 +71,7 @@
 								<div class="slider__image">
 									<picture>
 										<source type='image/webp' srcset='@img/gallery/03.webp'>
-										<img src='@img/gallery/03.jpg' alt=''>
+										<img src='@img/gallery/03.jpg' alt='Interier photo'>
 									</picture>
 								</div>
 							</div>
@@ -83,7 +83,7 @@
 				<div class="statisctics__image">
 					<picture>
 						<source type='image/webp' srcset='@img/gallery/06.webp'>
-						<img src='@img/gallery/06.jpg' alt=''>
+						<img src='@img/gallery/06.jpg' alt='Interier photo'>
 					</picture>
 				</div>
 				<div class="statisctics__right">
@@ -117,7 +117,7 @@
 					<div class="statisctics__abs">
 						<picture>
 							<source type='image/webp' srcset='@img/gallery/05.webp'>
-							<img src='@img/gallery/05.jpg' alt=''>
+							<img src='@img/gallery/05.jpg' alt='Interier photo'>
 						</picture>
 					</div>
 				</div>
@@ -132,7 +132,7 @@
 				<div class="resume__image">
 					<picture>
 						<source type='image/webp' srcset='@img/man.webp'>
-						<img src='@img/man.jpg' alt=''>
+						<img src='@img/man.jpg' alt='Roman Viktorovich Photo'>
 					</picture>
 				</div>
 			</section>
@@ -140,7 +140,7 @@
 				<div class="details__image">
 					<picture>
 						<source type='image/webp' srcset='@img/people.webp'>
-						<img src='@img/people.jpg' alt=''>
+						<img src='@img/people.jpg' alt='Team photo'>
 					</picture>
 				</div>
 				<div class="details__right">
@@ -165,9 +165,33 @@
 						arcu. Vitae nisl viverra enim nulla at. Fusce porta elementum quis.</p>
 				</div>
 			</section>
-
-		</main>
-		@@include('components/page-blocks/_footer.html')
+			@@include('components/page-blocks/_imagesAbsolute.html')
+			<section class="team">
+				<h2 class="team__label2 label2"><span>Do you want to work in our team?</span></h2>
+				<div class="team__bottom">
+					<form action="#" class="team__form">
+						<input type="email" placeholder="Email">
+						<svg class="team__arrow" width="11" height="8" viewBox="0 0 11 8" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.6667 4H1.33342" stroke="#515151" />
+							<path d="M4.8335 0.5L1.3335 4L4.8335 7.5" stroke="#515151" />
+						</svg>
+					</form>
+					<div class="team__right">
+						<p class="team__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+							ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.</p>
+						<a href="#" class="team__link link">info@hi-light.pl</a>
+						<ul class="team__social">
+							<li><a class="link" href="#">Fb</a></li>
+							<li><a class="link" href="#">In</a></li>
+							<li><a class="link" href="#">Be</a></li>
+						</ul>
+					</div>
+				</div>
+	</div>
+	</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
 	</div>
 	@@include('components/page-blocks/_scripts.html')
 </body>
