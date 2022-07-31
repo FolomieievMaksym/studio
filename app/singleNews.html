@@ -22,16 +22,28 @@
 			'picture': '07',
 			})
 			<!-- ? singleNewsContentOl.html -->
-			<!-- Заполняем тайтл, элементы списка -->
+			<!-- Заполняем элементы списка -->
 			@@include('components/singleNews/_singleNewsContentOl.html', {
-			'title' : 'Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet finibus
-			consectetur.',
 			'li1' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			'li2' : 'Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod.',
 			'li3' : 'Nam tempus pellentesque ligula ut aliquam.',
 			'li4' : 'Donec et ipsum nec quam posuere maximus eu in erat.',
 			'li5' : 'Duis laoreet finibus consectetur.',
 			})
+			<!-- ? singleNewsGallery.html -->
+			<!-- Указываем нужные изображения -->
+			@@include('components/singleNews/_singleNewsGallery.html', {
+			"img1" : '03',
+			"img2" : '07',
+			"img3" : '12',
+			})
+			<!-- ? singleNewsContentUl.html -->
+			<!-- Заполняем элементы списка -->
+			<!-- ! -->
+			@@include('components/singleNews/_singleNewsContentUl.html')
+			<!-- ? singleNewsSlider.html -->
+			<!-- Заполняем слайды -->
+			@@include('components/singleNews/_singleNewsSlider.html')
 		</main>
 		@@include('components/page-blocks/_footer.html')
 	</div>
