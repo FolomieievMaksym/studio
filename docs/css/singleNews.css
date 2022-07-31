@@ -942,6 +942,86 @@ body.single-news .gallery__image img {
   object-position: center;
 }
 
+body.single-news .content-ul {
+  padding-top: 6.6666666667%;
+  padding-bottom: 6.6666666667%;
+  padding-left: 13.6805555556%;
+  padding-right: 13.8354166667%;
+}
+
+body.single-news .content-ul__body {
+  position: relative;
+}
+
+body.single-news .content-ul__body:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 96px);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(130, 130, 130, 0.16);
+}
+
+body.single-news .content-ul__content {
+  max-width: 716px;
+}
+
+body.single-news .content-ul__title4 {
+  max-width: 419px;
+  margin-bottom: 15px;
+}
+
+body.single-news .content-ul__text {
+  color: #080808;
+}
+
+body.single-news .content-ul__text:first-of-type {
+  margin-bottom: 40px;
+}
+
+body.single-news .content-ul__text:last-of-type {
+  margin-bottom: 48px;
+}
+
+body.single-news .content-ul__list {
+  list-style: circle outside;
+  transform: translate(16px, 0);
+  margin-bottom: 39px;
+}
+
+body.single-news .content-ul__list li {
+  padding-right: 16px;
+}
+
+body.single-news .content-ul__list li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+body.single-news .social-ul {
+  display: block;
+}
+
+body.single-news .social-ul__text500 {
+  margin-bottom: 13px;
+}
+
+body.single-news .social-ul__icons-list {
+  display: flex;
+}
+
+body.single-news .social-ul__icons-list li:not(:last-child) {
+  margin-right: 7px;
+}
+
+body.single-news .social-ul img {
+  transition: all 0.3s ease;
+}
+
+body.single-news .social-ul img:hover {
+  transform: scale(1.2);
+}
+
 body.single-news {
   background-color: #FAFAFA;
 }
@@ -971,6 +1051,10 @@ body.single-news .footer path {
     height: 100%;
     background: rgba(0, 0, 0, 0.16);
     z-index: 1;
+  }
+
+  body.single-news .social-ul {
+    display: none;
   }
 }
 
@@ -1133,6 +1217,29 @@ body.single-news .footer path {
     padding-bottom: 49.781%;
   }
 
+  body.single-news .content-ul {
+    padding-top: 8.3984375%;
+    padding-bottom: 8.59375%;
+    padding-left: 15.52734375%;
+    padding-right: 14.55078125%;
+  }
+
+  body.single-news .content-ul__body:after {
+    top: calc(100% + 85px);
+  }
+
+  body.single-news .content-ul__title4 {
+    margin-bottom: 24px;
+  }
+
+  body.single-news .content-ul__text:first-of-type {
+    margin-bottom: 32px;
+  }
+
+  body.single-news .content-ul__list {
+    margin-bottom: 30px;
+  }
+
   body.single-news .header {
     padding-top: 6px;
   }
@@ -1247,6 +1354,37 @@ body.single-news .footer path {
   body.single-news .gallery__items {
     padding-left: 6.25%;
     padding-right: 6.25%;
+  }
+
+  body.single-news .content-ul {
+    padding-top: 9.375%;
+    padding-bottom: 9.375%;
+    padding-left: 16.1458333333%;
+    padding-right: 15.625%;
+  }
+
+  body.single-news .content-ul__body:after {
+    top: calc(100% + 69px);
+  }
+
+  body.single-news .content-ul__title4 {
+    margin-bottom: 22px;
+  }
+
+  body.single-news .content-ul__text:first-of-type {
+    margin-bottom: 33px;
+  }
+
+  body.single-news .content-ul__text:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  body.single-news .content-ul__list {
+    margin-bottom: 32px;
+  }
+
+  body.single-news .content-ul__list li:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   body.single-news .header {
@@ -1386,6 +1524,38 @@ body.single-news .footer path {
 
   body.single-news .gallery__item:nth-child(3n+1) .gallery__image {
     padding-bottom: 67.28%;
+  }
+
+  body.single-news .content-ul {
+    padding-top: 17.0666666667%;
+    padding-bottom: 17.0666666667%;
+    padding-left: 6.4%;
+    padding-right: 6.4%;
+  }
+
+  body.single-news .content-ul__body:after {
+    top: calc(100% + 60px);
+  }
+
+  body.single-news .content-ul__title4 {
+    max-width: 327px;
+    margin-bottom: 21px;
+  }
+
+  body.single-news .content-ul__text:first-of-type {
+    margin-bottom: 32px;
+  }
+
+  body.single-news .content-ul__text:last-of-type {
+    margin-bottom: 34px;
+  }
+
+  body.single-news .content-ul__list {
+    margin-bottom: 32px;
+  }
+
+  body.single-news .social-ul__text500 {
+    margin-bottom: 10px;
   }
 
   body.single-news .header__logo {

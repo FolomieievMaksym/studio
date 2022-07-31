@@ -39,10 +39,15 @@
 			})
 			<!-- ? singleNewsContentUl.html -->
 			<!-- Заполняем элементы списка -->
-			<!-- ! -->
-			@@include('components/singleNews/_singleNewsContentUl.html')
+			@@include('components/singleNews/_singleNewsContentUl.html', {
+			'li1' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			'li2' : 'Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod.',
+			'li3' : 'Nam tempus pellentesque ligula ut aliquam.',
+			'li4' : 'Donec et ipsum nec quam posuere maximus eu in erat.',
+			})
 			<!-- ? singleNewsSlider.html -->
 			<!-- Заполняем слайды -->
+			<!-- ! -->
 			@@include('components/singleNews/_singleNewsSlider.html')
 		</main>
 		@@include('components/page-blocks/_footer.html')
