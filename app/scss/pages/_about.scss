@@ -196,6 +196,7 @@ body.about {
 	&__image {
 		position:relative;
 		// width: 552px;
+		min-width: 250px;
 		width: calc(100% + 3px);
 		height: 444px;
 		@media (max-width: 1024px) {
@@ -219,9 +220,126 @@ body.about {
 	}
 }
 //======================================================================================
-// About
+// Statisctics
 //======================================================================================
+.statisctics {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-left: calc(130 / 1440 * 100%);
+	padding-right: calc(130 / 1440 * 100%);
+	@media (max-width: 768px) {
+		flex-direction: column-reverse;
+		
+	}
+	&__image {
+		padding-bottom: calc(607 / 1180 * 100%);
+		width: calc(516 / 1180 * 100%);
+		margin-right: calc(132 / 1180 * 100%);
+		position:relative;
+		@media (max-width: 1024px) {
+			padding-bottom: 70%;
+		}
+		@media (max-width: 768px) {
+			padding-bottom: 50%;
+			width: 100%;
+			margin-right: 0;
+		}
+		@media (max-width: 568px) {
+			padding-bottom: 80%;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background: linear-gradient(10deg, rgba(0, 0, 0, 0.48) 0%,rgba(0, 0, 0, 0) 45.39%) 0 0/ cover no-repeat;
+		}
+		img {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position:calc(50% - 25px) 50%;
+			@media (max-width: 768px) {
+				object-position: center;
+			}
+		}
+	}
 
+	&__grid {
+		display: grid;
+		grid-template-columns: 100px 132px;
+		grid-auto-flow: row;
+		column-gap: 79px;
+		row-gap: 42px;
+		margin-bottom: 58px;
+		@media (max-width: 768px) {
+			grid-template-columns: repeat(4, auto);
+			margin-bottom: 30px;
+			column-gap: 35px;
+		}
+		@media (max-width: 568px) {
+			grid-template-columns: 100px 132px;
+		}
+	}
+
+	&__title1 {
+		margin-bottom: 5px;
+	}
+
+	&__subtext {
+		@include fl(14, 18.48);
+		max-width: 100px;
+		
+	}
+
+	&__text {
+		max-width: 382px;
+		transform: translate(0px, 9px);
+		opacity: 1;
+		@media (max-width: 768px) {
+			max-width: 80%;
+			margin-bottom: 30px;
+		}
+		@media (max-width: 568px) {
+			max-width: none;
+		}
+	}
+	&__abs {
+		position:absolute;
+		right: 0;
+		top: 431px;
+		width: 168px;
+		height: 216px;
+		@media (max-width: 1024px) {
+			display: none;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to top right, rgba(0, 0, 0, 0.24) 0%,rgba(0, 0, 0, 0) 86.71%)
+		}
+		img {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position:center;
+		}
+	}
+}
 //======================================================================================
 // Resume
 //======================================================================================
