@@ -11,15 +11,27 @@
 		'class': 'header-dark'
 		})
 		<main class="single-news">
+			<!-- ? singleNewsHero.html -->
+			<!-- Пишем нужный тайтл -->
 			@@include('components/singleNews/_singleNewsHero.html', {
-			<!-- Пишем тайтл -->
 			'title': 'Antrax IT - Italian factory for the production',
 			})
-			@@include('components/singleNews/_singleNewsImage.html', {
+			<!-- ? singleNewsImage.html -->
 			<!-- Указываем нужное изображение -->
+			@@include('components/singleNews/_singleNewsImage.html', {
 			'picture': '07',
 			})
-			@@include('components/singleNews/_singleNewsContentOl.html')
+			<!-- ? singleNewsContentOl.html -->
+			<!-- Заполняем тайтл, элементы списка -->
+			@@include('components/singleNews/_singleNewsContentOl.html', {
+			'title' : 'Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet finibus
+			consectetur.',
+			'li1' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			'li2' : 'Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod.',
+			'li3' : 'Nam tempus pellentesque ligula ut aliquam.',
+			'li4' : 'Donec et ipsum nec quam posuere maximus eu in erat.',
+			'li5' : 'Duis laoreet finibus consectetur.',
+			})
 		</main>
 		@@include('components/page-blocks/_footer.html')
 	</div>

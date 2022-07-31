@@ -285,4 +285,26 @@ window.addEventListener('load', () => {
 			})
 		}
 	}
+
+	//=============================================================================
+	// singleNews.html
+	//=============================================================================
+	if (document.querySelector('body.single-news')) {
+
+		// Change text in singleNewsContentOl.html
+		if (document.querySelector('.ol-text-to-change')) {
+			const text = document.querySelector('.ol-text-to-change')
+			window.addEventListener('resize', changeText)
+
+			changeText()
+			function changeText() {
+				if (window.innerWidth <= 1024) {
+					text.innerHTML = 'Ut arcu tortor, hendrerit eget sollicitudin sed, tincidunt a lectus. Cras gravida ultricies ante sit amet consectetur. Maecenas sed arcu tempor, posuere odio pharetra, faucibus risus. Etiam fermentum felis quis aliquet viverra. Mauris in odio nec mi pellentesque placerat. Praesent at metus in lacus posuere molestie. Aliquam consequat, neque eget congue feugiat, lectus leo condimentum lorem, scelerisque euismod nisi ipsum nec metus. Mauris semper felis venenatis eros interdum sollicitudin.'
+				} else if (window.innerWidth > 1024) {
+					text.innerHTML = 'Aliquam iaculis ac urna at consequat. Pellentesque fermentum tellus eu nisi viverra gravida. Sed suscipit vestibulum accumsan. Sed ac magna id sem hendrerit convallis quis a magna. Mauris eget ornare est. Morbi metus justo, posuere vel semper semper, eleifend ut purus. Morbi cursus consequat nibh, a feugiat felis tempor vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sodales orci nisl, in lacinia risus rhoncus a. Praesent consectetur egestas risus, id consectetur felis.'
+				}
+			}
+		}
+
+	}
 })
