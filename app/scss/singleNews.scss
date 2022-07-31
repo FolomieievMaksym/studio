@@ -11,6 +11,57 @@
 
 // Подлкючение компонентов стилей
 @import "./components/text";
+@import "./components/btn";
 
-//Подключение стилей конкретной страницы
-@import "./pages/singleNews";
+//Подключение стилей секций страницы
+body.single-news {
+	@import "./components/singleNews/singleNewsHero";
+	@import "./components/singleNews/singleNewsImage";
+	@import "./components/singleNews/singleNewsContentOl";
+	@import "./components/singleNews/singleNewsGallery";
+	@import "./components/singleNews/singleNewsContentUl";
+	@import "./components/singleNews/singleNewsSlider";
+}
+
+body.single-news {
+	background-color: #FAFAFA;
+	.header {
+		@media (max-width: 1024px) {
+			padding-top: 6px;
+			&__burger {
+				&:after {
+					display: none;
+				}
+			}
+		}
+		@media (max-width: 768px) {
+			padding: 0;
+			transform: translate(0, -1px);
+			
+			&__logo {
+				transform: translate(5px, 0);
+				margin-right: calc(86 / 700 * 100%);
+			}
+			&__lang {
+				transform: translate(0, -1px);
+				
+			}
+		}
+		@media (max-width: 568px) {
+			&__logo {
+				transform: translate(0px, 0);
+			}
+			&__lang {
+				transform: translate(-8px,1.5px);
+			}
+		}
+	}
+	.footer {
+		display: none;
+		path {
+			stroke: $textColor1;
+			fill: $textColor1;
+		}
+	}
+}
+// ! footer display none 

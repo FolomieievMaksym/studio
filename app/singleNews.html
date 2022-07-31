@@ -7,11 +7,19 @@
 
 <body class="single-news">
 	<div class="wrapper">
-		@@include('components/page-blocks/_header.html')
+		@@include('components/page-blocks/_header.html', {
+		'class': 'header-dark'
+		})
 		<main class="single-news">
-			@@include('components/other-blocks/_singleNewsHero.html', {
+			@@include('components/singleNews/_singleNewsHero.html', {
+			<!-- Пишем тайтл -->
 			'title': 'Antrax IT - Italian factory for the production',
 			})
+			@@include('components/singleNews/_singleNewsImage.html', {
+			<!-- Указываем нужное изображение -->
+			'picture': '07',
+			})
+			@@include('components/singleNews/_singleNewsContentOl.html')
 		</main>
 		@@include('components/page-blocks/_footer.html')
 	</div>
