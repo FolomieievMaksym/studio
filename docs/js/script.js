@@ -42,7 +42,7 @@ window.addEventListener('load', () => {
 	// index.html
 	//=============================================================================
 
-	if (document.querySelector('body.main')) {
+	if (document.querySelector('body.home')) {
 
 		// Слайдер
 		if (document.querySelector('.swiper')) {
