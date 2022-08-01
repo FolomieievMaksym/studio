@@ -43,6 +43,11 @@
 	@include fl(16, 21.84);
 	font-weight: 700;
 }
+.title5 {
+	@include fl(8, 13.65);
+	font-weight: 700;
+	letter-spacing: calc(8*.2px);
+}
 .title6 {
 	font-family: $ff1;
 	@include fl(11, 13.41);

@@ -656,6 +656,13 @@ main {
   font-weight: 700;
 }
 
+.title5 {
+  font-size: 0.5em;
+  line-height: 1.70625;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
 .title6 {
   font-family: "Montserrat", sans-serif;
   font-size: 0.6875em;
@@ -1233,7 +1240,52 @@ body.single-project .btnn:active {
 }
 
 body.single-project .proportions {
-  background-color: green;
+  margin-top: -4px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  padding-bottom: 41.6666666667%;
+}
+
+body.single-project .proportions__body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body.single-project .proportions__title5 {
+  margin-bottom: 16px;
+  color: #828282;
+  text-transform: uppercase;
+  transform: translate(-4px, 0);
+}
+
+body.single-project .proportions__title2 {
+  margin-bottom: 128px;
+  color: #fff;
+}
+
+body.single-project .proportions__image {
+  position: absolute;
+  top: 33.5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 91.1111111111%;
+  padding-bottom: 45.2777777778%;
+}
+
+body.single-project .proportions__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
 }
 
 body.single-project {
@@ -1251,6 +1303,24 @@ body.single-project .images-row .text {
 body.single-project .images-row .vertical-decor {
   top: 19.9036918138%;
   left: 5.46875%;
+}
+
+body.single-project .gradient {
+  position: relative;
+}
+
+body.single-project .gradient:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, #0F0F0F 0%, #080808 100%);
+}
+
+body.single-project .footer {
+  display: none;
 }
 
 @media (min-width: 568px) {
@@ -1483,6 +1553,20 @@ body.single-project .images-row .vertical-decor {
     margin: 64px auto 124px;
   }
 
+  body.single-project .proportions {
+    padding-bottom: 57.03125%;
+  }
+
+  body.single-project .proportions__title5 {
+    transform: translate(0, 2px);
+  }
+
+  body.single-project .proportions__image {
+    width: 89.0625%;
+    padding-bottom: 40.91796875%;
+    top: 28.2534246575%;
+  }
+
   body.single-project .header {
     transform: translate(0, -4px);
   }
@@ -1624,6 +1708,20 @@ body.single-project .images-row .vertical-decor {
   body.single-project .btnn {
     margin: 56px auto 104px;
     transform: translate(-4px, 0);
+  }
+
+  body.single-project .proportions {
+    padding-bottom: 73.6979166667%;
+  }
+
+  body.single-project .proportions__title5 {
+    margin-bottom: 12px;
+  }
+
+  body.single-project .proportions__image {
+    width: 87.5%;
+    padding-bottom: 55.5989583333%;
+    top: 24.5583038869%;
   }
 
   body.single-project .header {
@@ -1799,6 +1897,20 @@ body.single-project .images-row .vertical-decor {
     width: 183px;
     height: 42px;
     padding-top: 8px;
+  }
+
+  body.single-project .proportions {
+    padding-bottom: 82.1333333333%;
+  }
+
+  body.single-project .proportions__title5 {
+    transform: translate(0, 6px);
+  }
+
+  body.single-project .proportions__image {
+    width: 87.2%;
+    padding-bottom: 104.5333333333%;
+    top: 34.4155844156%;
   }
 
   body.single-project .header__logo {
