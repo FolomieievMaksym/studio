@@ -7,7 +7,53 @@
 
 //Подключение общих стилей
 @import "./components/header";
-@import "./components/footer";
 
 // Подлкючение компонентов стилей
 @import "./components/text";
+@import "./components/btn";
+@import "./components/discover";
+@import "./components/vericalDecor";
+@import "./components/imagesRow";
+
+//Подключение стилей секций страницы
+body.single-project {
+	@import "./components/singleProject/singleProjectHero";
+	@import "./components/singleProject/singleProjectContent";
+	@import "./components/singleProject/singleProjectGallery";
+	@import "./components/singleProject/singleProjectProportions";
+}
+
+body.single-project {
+	background-color: #FAFAFA;
+	.header {
+		@media (max-width: 1024px) {
+			padding-top: 6px;
+			&__burger {
+				&:after {
+					display: none;
+				}
+			}
+		}
+		@media (max-width: 768px) {
+			padding: 0;
+			transform: translate(0, -1px);
+			
+			&__logo {
+				transform: translate(5px, 0);
+				margin-right: calc(86 / 700 * 100%);
+			}
+			&__lang {
+				transform: translate(0, -1px);
+				
+			}
+		}
+		@media (max-width: 568px) {
+			&__logo {
+				transform: translate(0px, 0);
+			}
+			&__lang {
+				transform: translate(-8px,1.5px);
+			}
+		}
+	}
+}
