@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html', {
+'lang':'en',
+'css': './css/error.min.css',
+'title': 'Error'
+})
+
+<body class="error">
+	<div class="wrapper">
+		@@include('components/page-blocks/_header.html', {
+		'class': 'header-light'
+		})
+		<main class="error">
+			<section class="main">
+				@@include('./components/other-blocks/_verticalDecor.html', {
+				'link': 'index.html',
+				'text': '404'
+				})
+				<div class="main__body">
+					<h2 class="main__title2 title2">Page not found</h2>
+					<p class="main__text text">Something went wrong. Page not found</p>
+					<a href="index.html" class="discover-light">go to main</a>
+				</div>
+			</section>
+		</main>
+		@@include('components/page-blocks/_footer.html')
+	</div>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -359,4 +359,24 @@ window.addEventListener('load', () => {
 			document.querySelector('.vertical-decor').innerHTML = 'make request'
 		}
 	}
+	//=============================================================================
+	// error.html
+	//=============================================================================
+	if (document.querySelector('body.error')) {
+
+		// Меняем логотип...
+		if (document.querySelector('.header__logo')) {
+			const logo = document.querySelector('.header__logo')
+			window.addEventListener('resize', changeLogo)
+
+			changeLogo()
+			function changeLogo() {
+				if (window.innerWidth <= 1024) {
+					logo.innerHTML = 'Logo'
+				} else if (window.innerWidth > 1024) {
+					logo.innerHTML = 'hilight'
+				}
+			}
+		}
+	}
 })
