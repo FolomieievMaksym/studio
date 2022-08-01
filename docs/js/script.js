@@ -340,7 +340,7 @@ window.addEventListener('load', () => {
 	//=============================================================================
 	if (document.querySelector('body.single-project')) {
 
-		// Change text in singleNewsContentOl.html
+		// Change text in  singleProjectHero.html
 		if (document.querySelector('.hero__title2')) {
 			const title = document.querySelector('.hero__title2')
 			window.addEventListener('resize', changeTitle)
@@ -355,5 +355,8 @@ window.addEventListener('load', () => {
 			}
 		}
 
+		if (document.querySelector('.vertical-decor')) {
+			document.querySelector('.vertical-decor').innerHTML = 'make request'
+		}
 	}
 })

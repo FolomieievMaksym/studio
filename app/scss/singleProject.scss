@@ -58,4 +58,38 @@ body.single-project {
 			}
 		}
 	}
+	.images-row {
+		.label2 {
+			transform: translate(0, -3px);
+			@media (max-width: 568px) {
+				transform: translate(0, 2px);
+				
+			}
+		}
+		&__content {
+			@media (max-width: 568px) {
+				padding-right: calc(22 / 375 * 100%);
+			}
+		}
+		.text {
+			transform: translate(0, -3px);
+			@media (max-width: 568px) {
+				transform: translate(0, -1px);
+			}
+		}
+		.vertical-decor {
+			@media (min-width: 1025px) {
+				display: none;
+			}
+			top: calc(124 / 623 * 100%);
+			left: calc(56 / 1024 * 100%);
+			@media (max-width: 768px) {
+				top: calc(124 / 571 * 100%);
+				left: calc(48 / 768 * 100%);
+			}
+			@media (max-width: 568px) {
+				display: none;
+			}
+		}
+	}
 }
