@@ -306,5 +306,36 @@ window.addEventListener('load', () => {
 			}
 		}
 
+		// Слайдер
+		if (document.querySelector('.swiper')) {
+			const swiper = new Swiper('.swiper', {
+				speed: 500,
+				simulateTouch: true,
+				slideToClickedSlide: true,
+				slidesPerView: 1.2,
+				breakpoints: {
+					320: {
+						slidesPerView: 1.195,
+						spaceBetween: 26,
+					},
+					569: {
+						slidesPerView: 1.718,
+						spaceBetween: 20,
+					},
+					769: {
+						slidesPerView: 2.718,
+						spaceBetween: 40,
+					},
+					1025: {
+						slidesPerView: 3.538,
+						spaceBetween: 48,
+					}
+				}
+			});
+		}
 	}
+
+	//=============================================================================
+	// singleProject.html
+	//=============================================================================
 })

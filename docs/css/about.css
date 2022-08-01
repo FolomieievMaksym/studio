@@ -956,6 +956,10 @@ body.about {
   margin-bottom: 13px;
 }
 
+.hero__text {
+  opacity: 1;
+}
+
 .philosophy__body {
   display: flex;
   justify-content: space-between;
@@ -1367,7 +1371,7 @@ body.about .images-absolute__text {
 }
 
 .team__social {
-  transform: translate(-11px, -1px);
+  transform: translate(0px, -1px);
   display: flex;
 }
 

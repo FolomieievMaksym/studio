@@ -67,6 +67,9 @@ body.about {
 	&__title2 {
 		margin-bottom: 13px;
 	}
+	&__text {
+		opacity: 1;
+	}
 }
 //======================================================================================
 // Philosophy
@@ -635,7 +638,7 @@ body.about{
 	}
 
 	&__social {
-		transform: translate(-11px, -1px);
+		transform: translate(0px, -1px);
 		
 		display: flex;
 		li {
