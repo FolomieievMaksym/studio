@@ -1,4 +1,32 @@
 .slider {
+	position: relative;
+	.vertical-decor {
+		top: calc(165 / 1440 * 100%);
+		left: calc(64 / 1440 * 100%);
+		color: #828282;
+		opacity: 0.3;
+		&:after{
+			background-color: #828282;
+		}
+		&:hover {
+			opacity: 1;
+			color: #080808;		
+			&:after{
+				background-color: #080808;
+			}	
+		}
+		@media (max-width: 1024px) {
+			top: calc(150 / 1024 * 100%);
+			left: calc(54 / 1024 * 100%);
+		}
+		@media (max-width: 768px) {
+			top: calc(90 / 768 * 100%);
+			left: calc(46 / 768 * 100%);
+		}
+		@media (max-width: 568px) {
+			display: none; 
+		}
+	}
 	padding-top: calc(95 / 1440 * 100%);
 	padding-bottom: calc(166 / 1440 * 100%);
 	padding-left: calc(202 / 1440 * 100%);
