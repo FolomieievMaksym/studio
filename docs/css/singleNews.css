@@ -1047,16 +1047,56 @@ button:active {
 }
 
 .area {
-  margin-bottom: 53px;
+  margin-bottom: 51px;
 }
 
 .area__items {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  position: relative;
 }
 
-.area__item {
-  text-align: center;
+.area__items:before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(214, 214, 214, 0.3);
+}
+
+.area__item:nth-child(1) .area__circle {
+  margin: 0;
+}
+
+.area__item:nth-child(2) {
+  transform: translate(7px, 0);
+}
+
+.area__item:nth-child(3) {
+  transform: translate(12px, 0);
+}
+
+.area__item:nth-child(4) {
+  transform: translate(13px, 0);
+}
+
+.area__item:nth-child(5) {
+  transform: translate(11px, 0);
+}
+
+.area__item:nth-child(6) {
+  transform: translate(9px, 0);
+}
+
+.area__item:nth-child(7) {
+  transform: translate(2px, 0);
+}
+
+.area__item:nth-child(8) {
+  transform: translate(6px, 0);
 }
 
 .area__num {
@@ -1066,17 +1106,81 @@ button:active {
   line-height: 1.2188888889;
   letter-spacing: 0.54px;
   margin-bottom: 9px;
+  text-align: center;
 }
 
 .area__circle {
-  cursor: pointer;
   margin: 0 auto;
+  cursor: pointer;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color: #F7F7F6;
-  background-color: red;
+  background-color: #F7F7F6;
+  position: relative;
+  z-index: 4;
 }
+
+.area__circle:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  transform: translate(-50%, -50%);
+  background: #AFB0B2;
+  z-index: 5;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.area__circle.active {
+  width: 20px;
+  height: 20px;
+  background: #1D1F26;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09);
+}
+
+.area__circle.active:after {
+  background: #fff;
+  border: none;
+}
+
+/*backup area
+
+.area {
+	margin-bottom: 53px;
+	&__items {
+		display: flex;
+		// grid-template-columns: repeat(8, 1fr);
+		justify-content: space-between;
+	}
+
+	&__item {
+		text-align: center;
+	}
+
+	&__num {
+		font-family: $ff1;
+		color: #3A3E4B;
+		@include fl(9, 10.97);
+		letter-spacing: calc(9 * .06px);
+		margin-bottom: 9px;
+	}
+
+	&__circle {
+		cursor: pointer;
+		margin: 0 auto;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: #F7F7F6;
+		background-color: red;
+	}
+}
+*/
 
 body.single-news .hero {
   display: flex;
