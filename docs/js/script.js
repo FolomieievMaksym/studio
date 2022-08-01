@@ -338,4 +338,22 @@ window.addEventListener('load', () => {
 	//=============================================================================
 	// singleProject.html
 	//=============================================================================
+	if (document.querySelector('body.single-project')) {
+
+		// Change text in singleNewsContentOl.html
+		if (document.querySelector('.hero__title2')) {
+			const title = document.querySelector('.hero__title2')
+			window.addEventListener('resize', changeTitle)
+
+			changeTitle()
+			function changeTitle() {
+				if (window.innerWidth <= 1024) {
+					title.innerHTML = 'Residence  <br/> by the lighthouse'
+				} else if (window.innerWidth > 1024) {
+					title.innerHTML = 'Residence by the lighthouse'
+				}
+			}
+		}
+
+	}
 })
