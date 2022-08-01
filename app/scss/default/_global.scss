@@ -1,3 +1,6 @@
+body.lock {
+	overflow: hidden;
+}
 body {
 	font-family: $ff1; 
 	@include fz(16);

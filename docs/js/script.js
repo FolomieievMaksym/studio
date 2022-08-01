@@ -16,13 +16,11 @@ window.addEventListener('load', () => {
 				burger.classList.toggle('active');
 				menu.classList.toggle('active');
 				header.classList.toggle('active');
-				body.classList.toggle('lock');
 				window.addEventListener('scroll', closeBurger)
 			} else if (!e.target.closest('.burger')) {
 				burger.classList.remove('active');
 				menu.classList.remove('active');
 				header.classList.remove('active');
-				body.classList.remove('lock');
 				window.removeEventListener('scroll', closeBurger)
 			}
 		}
@@ -379,4 +377,43 @@ window.addEventListener('load', () => {
 			}
 		}
 	}
+	//=============================================================================
+	// popup.html
+	//=============================================================================
+
+	// Меняем Тайтл...
+	if (document.querySelector('.form-popup__title')) {
+		const popupTitle = document.querySelector('.form-popup__title')
+		window.addEventListener('resize', changePopupTitle)
+
+		changePopupTitle()
+		function changePopupTitle() {
+			if (window.innerWidth <= 1024) {
+				popupTitle.innerHTML = 'Make request'
+			} else if (window.innerWidth > 1024) {
+				popupTitle.innerHTML = 'Calculate the cost of work'
+			}
+		}
+	}
+
+	const btns = document.querySelectorAll('button.btn'),
+		popup = document.querySelector('.popup');
+
+	body.addEventListener('click', togglePopup)
+
+	function togglePopup(e) {
+		if (popup.classList.contains('active')) {
+			if (!e.target.closest('.popup__body')) {
+				popup.classList.remove('active')
+				body.classList.remove('lock')
+			}
+		}
+		if (e.target.closest('button.btn')) {
+			popup.classList.add('active')
+			body.classList.add('lock')
+			// body.removeEventListener('click', togglePopup)
+		}
+
+	}
+
 })
