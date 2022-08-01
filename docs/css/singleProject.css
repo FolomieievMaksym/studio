@@ -1146,7 +1146,21 @@ body.single-project .hero__social li:not(:last-child) {
 }
 
 body.single-project .content {
-  background-color: green;
+  padding-top: 9.7222222222%;
+  padding-bottom: 9.6527777778%;
+  padding-left: 13.6805555556%;
+  padding-right: 13.6805555556%;
+}
+
+body.single-project .content__title4 {
+  margin-bottom: 17px;
+  max-width: 419px;
+}
+
+body.single-project .content__text {
+  margin-bottom: 40px;
+  max-width: 715px;
+  color: #080808;
 }
 
 body.single-project .gallery {
@@ -1352,6 +1366,17 @@ body.single-project {
     transform: translate(0, -1px);
   }
 
+  body.single-project .content {
+    padding-top: 12.109375%;
+    padding-bottom: 12.01171875%;
+    padding-left: 15.52734375%;
+    padding-right: 15.52734375%;
+  }
+
+  body.single-project .content__text {
+    max-width: 602px;
+  }
+
   body.single-project .header {
     transform: translate(0, -4px);
   }
@@ -1464,6 +1489,25 @@ body.single-project {
   body.single-project .hero__row .hero__text {
     margin-right: 40px;
     margin-right: 4.5833333333%;
+  }
+
+  body.single-project .content {
+    padding-top: 13.5416666667%;
+    padding-bottom: 13.4114583333%;
+    padding-left: 16.1458333333%;
+    padding-right: 16.1458333333%;
+  }
+
+  body.single-project .content__title4 {
+    margin-bottom: 23px;
+  }
+
+  body.single-project .content__text {
+    margin-bottom: 41px;
+  }
+
+  body.single-project .content .discover-dark {
+    padding-left: 18px;
   }
 
   body.single-project .header {
@@ -1600,6 +1644,17 @@ body.single-project {
 
   body.single-project .hero__row {
     padding-left: 6.9333333333%;
+  }
+
+  body.single-project .content {
+    padding-top: 6.4%;
+    padding-bottom: 21.0666666667%;
+    padding-left: 6.4%;
+    padding-right: 6.4%;
+  }
+
+  body.single-project .content .discover-dark {
+    padding-left: 16px;
   }
 
   body.single-project .header__logo {

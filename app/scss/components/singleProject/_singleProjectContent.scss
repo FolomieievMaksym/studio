@@ -1,3 +1,51 @@
 .content {
-	background-color: green;
+	padding-top: calc(140 / 1440 * 100%);
+	padding-bottom: calc(139 / 1440 * 100%);
+	padding-left: calc(197 / 1440 * 100%);
+	padding-right: calc(197 / 1440 * 100%);
+	@media (max-width: 1024px) {
+		padding-top: calc(124 / 1024 * 100%);
+		padding-bottom: calc(123 / 1024 * 100%);
+		padding-left: calc(159 / 1024 * 100%);
+		padding-right: calc(159 / 1024 * 100%);
+	}
+	@media (max-width: 768px) {
+		padding-top: calc(104 / 768 * 100%);
+		padding-bottom: calc(103 / 768 * 100%);
+		padding-left: calc(124 / 768 * 100%);
+		padding-right: calc(124 / 768 * 100%);
+	}
+	@media (max-width: 568px) {
+		padding-top: calc(24 / 375 * 100%);
+		padding-bottom: calc(79 / 375 * 100%);
+		padding-left: calc(24 / 375 * 100%);
+		padding-right: calc(24 / 375 * 100%);
+	}
+	&__title4 {
+		margin-bottom: 17px;
+		max-width: 419px;
+		@media (max-width: 768px) {
+			margin-bottom: 23px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		max-width: 715px;
+		color: $textColor1;
+		@media (max-width: 1024px) {
+			max-width: 602px;
+		}
+		@media (max-width: 768px) {
+			margin-bottom: 41px;
+		}
+	}
+	.discover-dark {
+		@media (max-width: 768px) {
+			padding-left: 18px;
+		}
+		@media (max-width: 568px) {
+			padding-left: 16px;
+		}
+	}
 }
