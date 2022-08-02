@@ -2749,7 +2749,7 @@ body.about .footer path {
 
   body.about .header {
     padding: 0;
-    transform: translate(0, -1px);
+    margin-top: -1px;
   }
 
   body.about .header__logo {

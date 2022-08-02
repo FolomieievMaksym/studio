@@ -2330,7 +2330,7 @@ body.single-project .footer {
   }
 
   body.single-project .header {
-    transform: translate(0, -4px);
+    margin-top: -4px;
   }
 
   body.single-project .header__lang,
@@ -2712,7 +2712,7 @@ body.single-project .footer {
 
   body.single-project .header {
     padding: 0;
-    transform: translate(0, -1px);
+    margin-top: -1px;
   }
 
   body.single-project .header__logo {

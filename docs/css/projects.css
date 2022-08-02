@@ -2730,7 +2730,7 @@ body.projects .images-row {
 
   body.projects .header {
     padding: 0;
-    transform: translate(0, -1px);
+    margin-top: -1px;
   }
 
   body.projects .header__logo {
