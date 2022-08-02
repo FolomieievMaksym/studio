@@ -2546,7 +2546,7 @@ body.news {
 
   body.news .header {
     padding: 0;
-    transform: translate(0, -1px);
+    margin-top: -1px;
   }
 
   body.news .header__logo {
