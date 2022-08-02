@@ -1067,10 +1067,10 @@ button:active {
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 100vh;
-  min-width: 100vw;
   color: #3A3E4B;
   background-color: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .popup.active {
@@ -1078,6 +1078,15 @@ button:active {
   opacity: 1;
   z-index: 101;
   overflow-y: scroll;
+}
+
+.popup__fix {
+  position: absolute;
+  left: 50%;
+  top: 7.7239958805%;
+  transform: translate(-50%, 0);
+  min-width: 72.6388888889%;
+  min-height: 971px;
 }
 
 .popup__body {
@@ -1088,8 +1097,7 @@ button:active {
   padding-left: 123px;
   padding-right: 123px;
   position: absolute;
-  top: 75px;
-  left: 197px;
+  width: 100%;
 }
 
 .form-popup__top,
@@ -1267,8 +1275,6 @@ button:active {
   background-color: #3A3E4B;
   border: none;
   height: 42px;
-  margin: 0 auto;
-  transform: translate(-5px, 0);
   font-family: "Montserrat", sans-serif;
   font-size: 0.6875em;
   line-height: 1.2190909091;
@@ -1331,6 +1337,11 @@ button:active {
   width: 100%;
   height: 1px;
   background: rgba(214, 214, 214, 0.3);
+  z-index: 0;
+}
+
+.area__item {
+  z-index: 2;
 }
 
 .area__item:nth-child(1) .area__circle {
@@ -1714,13 +1725,17 @@ body.single-project .footer {
 }
 
 @media (max-width: 1300px) {
+  .popup__fix {
+    top: 5.5989583333%;
+    min-width: 78.90625%;
+    min-height: 768px;
+  }
+
   .popup__body {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 51px;
     padding-right: 51px;
-    top: 43px;
-    left: 108px;
   }
 
   .form-popup__top,
@@ -1747,6 +1762,11 @@ body.single-project .footer {
 
   .form-popup__left {
     display: none;
+  }
+
+  .form-popup .btnp {
+    margin: 0 auto;
+    transform: translate(-5px, 0);
   }
 
   .form-popup__center-text {
@@ -2001,10 +2021,14 @@ body.single-project .footer {
 }
 
 @media (max-width: 920px) {
+  .popup__fix {
+    top: 4.39453125%;
+    min-width: 72.65625%;
+    min-height: 1024px;
+  }
+
   .popup__body {
     padding: 32px 40px;
-    top: 45px;
-    left: 105px;
   }
 
   .form-popup__top,
@@ -2096,6 +2120,21 @@ body.single-project .footer {
   .area__items {
     flex-wrap: wrap;
     row-gap: 32px;
+  }
+
+  .area__items:before {
+    bottom: 9px;
+  }
+
+  .area__items:after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(214, 214, 214, 0.3);
+    z-index: 0;
   }
 
   .area__item {
@@ -2330,12 +2369,15 @@ body.single-project .footer {
 }
 
 @media (max-width: 650px) {
+  .popup__fix {
+    top: 6.7439409905%;
+    min-width: 87.2%;
+    min-height: 949px;
+  }
+
   .popup__body {
     padding: 0;
     background: #000;
-    max-width: 327px;
-    top: 64px;
-    left: 24px;
   }
 
   .form-popup__top,
