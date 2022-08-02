@@ -128,6 +128,7 @@
 	display: none;
 	width: 28px;
 	height: 8px;
+	height: 30px; //delete
 	position: relative; 
 	cursor: pointer;
 	@media (max-width: 568px) {
@@ -164,11 +165,13 @@
 		content: 'Menu';
 		display: inline-block;
 		padding-left: 53px;
-		transform: translate(0, -3px);
+		// transform: translate(0, -3px);
+		transform: translate(0, 9px);
 		transition:all 0.3s ease;
 		@media (max-width: 768px) {
 			padding-left: 49px;
-			transform: translate(0, -2px);
+			// transform: translate(0, -2px);
+			transform: translate(0, 9px);
 		}
 		@media (max-width: 568px) {
 			display: none;
@@ -196,7 +199,7 @@
 			
 		}
 		100% {
-			top: 0;
+			top: 11px;
 			transform: translate(0, 0);
 		}
 	}
@@ -211,7 +214,8 @@
 			top: 50%;
 		}
 		100% {
-			top: 100%;
+			// top: 100%;
+			top: 19px;
 			transform: translate(0, -50%);
 		}
 	}
@@ -271,7 +275,8 @@
 	}
 	@keyframes burger1 {
 		0% {
-			top: 0;
+			// top: 0;
+			top: 11px;
 		}
 		50%{
 			transform: translate(0, -50%);
@@ -285,7 +290,8 @@
 	}
 	@keyframes burger2 {
 		0% {
-			top: 100%;
+			// top: 100%;
+			top: 19px;
 			transform: translate(0, -50%);
 		}
 		50% {
