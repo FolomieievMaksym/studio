@@ -1708,6 +1708,12 @@ body.projects .images-row {
   margin-bottom: 50px;
 }
 
+.item-link {
+  width: 453px;
+  height: 453px;
+  position: relative;
+}
+
 @media (min-width: 769px) {
   .item-gallery:nth-child(3n) {
     grid-column: span 2;
