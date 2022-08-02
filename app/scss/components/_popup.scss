@@ -3,6 +3,8 @@
 	&.active {
 		pointer-events: all;
 		opacity: 1;
+		z-index: 101;
+		overflow-y: scroll;
 	}
 	transition: all .5s ease;
 	pointer-events: none;
@@ -13,27 +15,26 @@
 	min-height: 100vh;
 	min-width: 100vw;
 	color: #3A3E4B;
-	z-index: 101;
 	background-color: rgba(0, 0, 0, 0.9);
-	padding-top: 75px;
-	padding-bottom: 93px;
-	padding-left: 197px;
-	padding-right: 197px;
-	@media (max-width: 1300px) {
-		padding-top: 43px;
-		padding-bottom: 58px;
-		padding-left: 108px;
-		padding-right: 108px;
-	}
-	@media (max-width: 920px) {
-		padding-top: 45px;
-		padding-bottom: 46px;
-		padding-left: 105px;
-		padding-right: 105px;
-	}
-	@media (max-width: 650px) {
-		padding: 64px 24px;
-	}
+	// padding-top: 75px;
+	// padding-bottom: 93px;
+	// padding-left: 197px;
+	// padding-right: 197px;
+	// @media (max-width: 1300px) {
+	// 	padding-top: 43px;
+	// 	padding-bottom: 58px;
+	// 	padding-left: 108px;
+	// 	padding-right: 108px;
+	// }
+	// @media (max-width: 920px) {
+	// 	padding-top: 45px;
+	// 	padding-bottom: 46px;
+	// 	padding-left: 105px;
+	// 	padding-right: 105px;
+	// }
+	// @media (max-width: 650px) {
+	// 	padding: 64px 24px;
+	// }
 	&__body {
 		background-color: #FAFAFA;
 		box-shadow: 0 2px 24px rgba(0, 0, 0, 0.04);
@@ -41,19 +42,28 @@
 		padding-bottom: 57px;
 		padding-left: 123px;
 		padding-right: 123px;
+		position: absolute;
+		top: 75px;
+		left: 197px;
 		@media (max-width: 1300px) {
 			padding-top: 32px;
 			padding-bottom: 32px;
 			padding-left: 51px;
 			padding-right: 51px;
+			top: 43px;
+			left: 108px;
 		}
 		@media (max-width: 920px) {
 			padding: 32px 40px;
+			top: 45px;
+			left: 105px;
 		}
 		@media (max-width: 650px) {
 			padding: 0;
 			background: #000;
 			max-width: 327px;
+			top: 64px;
+			left: 24px;
 		}
 	}
 

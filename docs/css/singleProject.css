@@ -192,6 +192,10 @@ a {
   font-style: normal;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
@@ -1066,17 +1070,14 @@ button:active {
   min-height: 100vh;
   min-width: 100vw;
   color: #3A3E4B;
-  z-index: 101;
   background-color: rgba(0, 0, 0, 0.9);
-  padding-top: 75px;
-  padding-bottom: 93px;
-  padding-left: 197px;
-  padding-right: 197px;
 }
 
 .popup.active {
   pointer-events: all;
   opacity: 1;
+  z-index: 101;
+  overflow-y: scroll;
 }
 
 .popup__body {
@@ -1086,6 +1087,9 @@ button:active {
   padding-bottom: 57px;
   padding-left: 123px;
   padding-right: 123px;
+  position: absolute;
+  top: 75px;
+  left: 197px;
 }
 
 .form-popup__top,
@@ -1710,18 +1714,13 @@ body.single-project .footer {
 }
 
 @media (max-width: 1300px) {
-  .popup {
-    padding-top: 43px;
-    padding-bottom: 58px;
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-
   .popup__body {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 51px;
     padding-right: 51px;
+    top: 43px;
+    left: 108px;
   }
 
   .form-popup__top,
@@ -2002,15 +2001,10 @@ body.single-project .footer {
 }
 
 @media (max-width: 920px) {
-  .popup {
-    padding-top: 45px;
-    padding-bottom: 46px;
-    padding-left: 105px;
-    padding-right: 105px;
-  }
-
   .popup__body {
     padding: 32px 40px;
+    top: 45px;
+    left: 105px;
   }
 
   .form-popup__top,
@@ -2336,14 +2330,12 @@ body.single-project .footer {
 }
 
 @media (max-width: 650px) {
-  .popup {
-    padding: 64px 24px;
-  }
-
   .popup__body {
     padding: 0;
     background: #000;
     max-width: 327px;
+    top: 64px;
+    left: 24px;
   }
 
   .form-popup__top,
