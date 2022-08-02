@@ -14,8 +14,8 @@ body.projects {
 		}
 		@media (max-width: 768px) {
 			padding: 0;
-			transform: translate(0, -1px);
-			
+			// transform: translate(0, -1px);
+			margin-top: -1px;
 			&__logo {
 				transform: translate(5px, 0);
 				margin-right: calc(86 / 700 * 100%);
