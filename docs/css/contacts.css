@@ -222,6 +222,14 @@ main {
   flex-direction: column;
 }
 
+.hidden-heading {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .header {
   position: absolute;
   top: 0;
