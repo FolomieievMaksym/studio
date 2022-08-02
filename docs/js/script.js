@@ -16,20 +16,20 @@ window.addEventListener('load', () => {
 				header.classList.toggle('active');
 				window.addEventListener('scroll', closeBurger)
 			} else if (!e.target.closest('.burger')) {
-				// burger.classList.remove('active');
-				// menu.classList.remove('active');
-				// header.classList.remove('active');
-				// window.removeEventListener('scroll', closeBurger)
+				burger.classList.remove('active');
+				menu.classList.remove('active');
+				header.classList.remove('active');
+				window.removeEventListener('scroll', closeBurger)
 			}
 		}
 
 		function closeBurger() {
 			if (burger.classList.contains('active')) { //Необязательная дополнительная проверка
-				// burger.classList.remove('active');
-				// menu.classList.remove('active');
-				// header.classList.remove('active');
-				// body.classList.remove('lock');
-				// window.removeEventListener('scroll', closeBurger)
+				burger.classList.remove('active');
+				menu.classList.remove('active');
+				header.classList.remove('active');
+				body.classList.remove('lock');
+				window.removeEventListener('scroll', closeBurger)
 			}
 		}
 
