@@ -2158,7 +2158,7 @@ body.error .main .vertical-decor {
 
   body.error .header {
     padding: 0;
-    transform: translate(0, -1px);
+    margin-top: -1px;
   }
 
   body.error .header__logo {
