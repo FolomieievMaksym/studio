@@ -31,5 +31,11 @@ main{
 	flex: 1 1 auto;
 	display: flex; //Фикс белой линии у бекграунда контактов 1/3
 	flex-direction: column; //Фикс белой линии у бекграунда контактов 2/3
-	
+}
+.hidden-heading {
+	height: 0;
+	width: 0;
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
 }
