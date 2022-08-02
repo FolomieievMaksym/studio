@@ -6,6 +6,11 @@ const burger = document.querySelector('.burger'),
 
 window.addEventListener('load', () => {
 
+	body.addEventListener('click', somef)
+
+	function somef(e) {
+		console.log(e.target)
+	}
 
 	//Бургер
 	if (burger) {
@@ -18,20 +23,35 @@ window.addEventListener('load', () => {
 				header.classList.toggle('active');
 				window.addEventListener('scroll', closeBurger)
 			} else if (!e.target.closest('.burger')) {
-				burger.classList.remove('active');
-				menu.classList.remove('active');
-				header.classList.remove('active');
-				window.removeEventListener('scroll', closeBurger)
+				// burger.classList.remove('active');
+				// menu.classList.remove('active');
+				// header.classList.remove('active');
+				// window.removeEventListener('scroll', closeBurger)
 			}
 		}
 
 		function closeBurger() {
 			if (burger.classList.contains('active')) { //Необязательная дополнительная проверка
-				burger.classList.remove('active');
-				menu.classList.remove('active');
-				header.classList.remove('active');
-				body.classList.remove('lock');
-				window.removeEventListener('scroll', closeBurger)
+				// burger.classList.remove('active');
+				// menu.classList.remove('active');
+				// header.classList.remove('active');
+				// body.classList.remove('lock');
+				// window.removeEventListener('scroll', closeBurger)
+			}
+		}
+
+		const menuList = document.querySelector('.menu__list')
+
+		window.addEventListener('resize', addItem)
+
+		addItem()
+		function addItem() {
+			const newLi = document.createElement('li')
+			newLi.innerHTML = '<a href="index.html" class="menu__link link link-to-delete">Home</a>'
+			if (window.innerWidth <= 1024) {
+				if (!document.querySelector('.link-to-delete')) menuList.prepend(newLi)
+			} else if (window.innerWidth > 1024) {
+				if (document.querySelector('.link-to-delete')) menuList.firstElementChild.remove()
 			}
 		}
 	}

@@ -6,6 +6,7 @@
 	// &__cnt {
 		position: relative;
 		z-index: 1;
+		
 		pointer-events: none;
 		padding-bottom: 51.737%;
 		@media (max-width: 1024px) {
@@ -185,6 +186,7 @@
 		max-width: 1362px;
 		margin: 0 auto;
 		padding: 0 24px;
+		
 		@media (max-width: 1024px) {
 			bottom: 33px;
 			max-width: 960px;;
@@ -199,6 +201,8 @@
 	}
 
 	&__social {
+		position: relative;
+		
 		margin-right: calc(117 / 1362 * 100%);
 		display: flex;
 		align-items: center;
