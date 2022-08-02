@@ -632,9 +632,6 @@
 		pointer-events: all;
 	}
 }
-
-
-
 .second-body {
 	transition: all .3s ease;
 	
@@ -701,5 +698,52 @@
 		&:active {
 			background-color: #595c66;
 		}
+	}
+}
+
+.close-icon {
+	width: 21.68px;
+	height: 21.68px;
+	position: absolute;
+	top: 38px;
+	right: 38px;
+	transform: translate(0, 50%);
+	@media (max-width: 1300px) {
+		top: 41px;
+		right: 41px;
+	}
+	@media (max-width: 920px) {
+		top: 40px;
+		right: 40px;
+		top: 38px;
+	right: 38px;
+	}
+	@media (max-width: 650px) {
+		top: 24px;
+		right: 24px;
+		top: 22px;
+		right: 22px;
+	}
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 1px;
+		background: #fff;
+		// transform: translate(0, 20px);
+		
+		
+	}
+	&:before{
+		transform: rotate(45deg);
+		
+	}
+	&:after{
+		transform: rotate(-45deg);
+		
 	}
 }

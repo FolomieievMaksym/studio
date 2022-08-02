@@ -415,13 +415,18 @@ window.addEventListener('load', () => {
 	const btns = document.querySelectorAll('button.btn'),
 		btnp = document.querySelectorAll('button.btnp'),
 		btnс = document.querySelectorAll('button.btnc'),
+		closeIcon = document.querySelectorAll('.close-icon'),
 		popup = document.querySelector('.popup');
 
 	body.addEventListener('click', togglePopup)
 
 	function togglePopup(e) {
 		if (popup.classList.contains('active')) {
-			if (!e.target.closest('.popup__body') && !e.target.closest('.popup__second-body')) {
+			if (e.target.closest('.close-icon')) {
+				popup.classList.remove('active')
+				popup.classList.remove('to-close')
+				body.classList.remove('lock')
+			} else if (!e.target.closest('.popup__body') && !e.target.closest('.popup__second-body')) {
 				popup.classList.remove('active')
 				popup.classList.remove('to-close')
 				body.classList.remove('lock')

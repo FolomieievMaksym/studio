@@ -1540,6 +1540,35 @@ button:active {
   background-color: #595c66;
 }
 
+.close-icon {
+  width: 21.68px;
+  height: 21.68px;
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  transform: translate(0, 50%);
+}
+
+.close-icon:after,
+.close-icon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+.close-icon:before {
+  transform: rotate(45deg);
+}
+
+.close-icon:after {
+  transform: rotate(-45deg);
+}
+
 body.projects {
   background-color: #FAFAFA;
 }
@@ -1888,6 +1917,11 @@ body.projects .images-row {
   .second-body .btnc {
     margin: 0 auto;
     transform: translate(-5px, 0);
+  }
+
+  .close-icon {
+    top: 41px;
+    right: 41px;
   }
 }
 
@@ -2363,6 +2397,13 @@ body.projects .images-row {
   .second-body .btnc {
     transform: translate(0, 0);
   }
+
+  .close-icon {
+    top: 40px;
+    right: 40px;
+    top: 38px;
+    right: 38px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2623,6 +2664,13 @@ body.projects .images-row {
   .second-body {
     min-width: 87.2%;
     min-height: 49.3253373313%;
+  }
+
+  .close-icon {
+    top: 24px;
+    right: 24px;
+    top: 22px;
+    right: 22px;
   }
 }
 
