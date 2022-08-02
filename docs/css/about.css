@@ -964,7 +964,8 @@ button:active {
 }
 
 .popup__body {
-  background-color: #FAFAFA;
+  transition: all 0.3s ease;
+  background-color: #F6F6F6;
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.04);
   padding-top: 56px;
   padding-bottom: 57px;
@@ -1297,6 +1298,78 @@ button:active {
 .area__circle.active:after {
   background: #fff;
   border: none;
+}
+
+.popup.active.to-close .popup__fix {
+  display: none;
+}
+
+.popup.active.to-close .popup__body {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup.active.to-close .popup__second-body {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.second-body {
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+  min-width: 68.9453125%;
+  min-height: 52.734375%;
+  padding: 24px;
+}
+
+.second-body__title {
+  margin-bottom: 14px;
+  font-size: 1.5em;
+  line-height: 1.2191666667;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #3A3E4B;
+}
+
+.second-body__text {
+  margin-bottom: 40px;
+  color: #3A3E4B;
+  max-width: 448px;
+}
+
+.second-body .btnc {
+  color: #fff;
+  background-color: #3A3E4B;
+  border: none;
+  height: 42px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6875em;
+  line-height: 1.2190909091;
+  font-weight: 600;
+  letter-spacing: 0.66px;
+  width: 183px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.second-body .btnc:hover {
+  font-size: 0.75em;
+}
+
+.second-body .btnc:active {
+  background-color: #595c66;
 }
 
 body.about {
@@ -1828,6 +1901,11 @@ body.about .footer path {
   .area__item:nth-child(7) {
     transform: translate(5px, 0);
   }
+
+  .second-body .btnc {
+    margin: 0 auto;
+    transform: translate(-5px, 0);
+  }
 }
 
 @media (max-width: 1250px) {
@@ -2267,6 +2345,15 @@ body.about .footer path {
     margin: 0;
     margin-left: auto;
   }
+
+  .second-body {
+    min-width: 67.7083333333%;
+    min-height: 28.7109375%;
+  }
+
+  .second-body .btnc {
+    transform: translate(0, 0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -2516,6 +2603,11 @@ body.about .footer path {
 
   .area__item:nth-child(7) {
     transform: translate(10px, 0);
+  }
+
+  .second-body {
+    min-width: 87.2%;
+    min-height: 49.3253373313%;
   }
 }
 

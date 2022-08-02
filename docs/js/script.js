@@ -411,16 +411,28 @@ window.addEventListener('load', () => {
 		}
 	}
 
+	//Слушаем кнопки открывающие попап
 	const btns = document.querySelectorAll('button.btn'),
+		btnp = document.querySelectorAll('button.btnp'),
+		btnс = document.querySelectorAll('button.btnc'),
 		popup = document.querySelector('.popup');
 
 	body.addEventListener('click', togglePopup)
 
 	function togglePopup(e) {
 		if (popup.classList.contains('active')) {
-			if (!e.target.closest('.popup__body')) {
+			if (!e.target.closest('.popup__body') && !e.target.closest('.popup__second-body')) {
 				popup.classList.remove('active')
+				popup.classList.remove('to-close')
 				body.classList.remove('lock')
+			}
+			if (e.target.closest('.btnp')) {
+				e.preventDefault()
+				popup.classList.add('to-close')
+			} else if (e.target.closest('.btnc')) {
+				popup.classList.remove('active')
+				popup.classList.remove('to-close')
+				popup.classList.add('active')
 			}
 		}
 		if (e.target.closest('button.btn')) {
