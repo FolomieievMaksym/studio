@@ -255,6 +255,19 @@ window.addEventListener('load', () => {
 				}
 			}
 		}
+
+		//Перенаправляем на другую страницу
+		if (document.querySelectorAll('.gallery__item')) {
+			const galleryItems = document.querySelectorAll('.gallery__item')
+
+			body.addEventListener('click', relocate)
+
+			function relocate(e) {
+				if (e.target.closest('.gallery__item')) {
+					location.href = 'singleProject.html'
+				}
+			}
+		}
 	}
 
 	//=============================================================================
@@ -356,6 +369,8 @@ window.addEventListener('load', () => {
 		if (document.querySelector('.vertical-decor')) {
 			document.querySelector('.vertical-decor').innerHTML = 'make request'
 		}
+
+
 	}
 	//=============================================================================
 	// error.html

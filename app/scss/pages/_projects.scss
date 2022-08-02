@@ -205,6 +205,7 @@ body.projects {
 	}
 }
 .item-gallery {
+	cursor: pointer;
 	position: relative;
 	overflow: hidden;
 	position: relative;
@@ -602,9 +603,4 @@ body.projects {
 			}
 		}
 	}
-}
-.item-link {
-	width: 453px;
-	height: 453px;
-	position: relative;
 }

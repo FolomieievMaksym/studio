@@ -1546,6 +1546,7 @@ body.projects {
 }
 
 .item-gallery {
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   position: relative;
@@ -1706,12 +1707,6 @@ body.projects .btn:active {
 
 body.projects .images-row {
   margin-bottom: 50px;
-}
-
-.item-link {
-  width: 453px;
-  height: 453px;
-  position: relative;
 }
 
 @media (min-width: 769px) {
